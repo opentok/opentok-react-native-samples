@@ -1,0 +1,83 @@
+![OpenTok Labs](https://d26dzxoao6i3hh.cloudfront.net/items/0U1R0a0e2g1E361H0x3c/Image%202017-11-22%20at%2012.16.38%20PM.png?v=2507a2df)
+# OpenTok React Native
+## Contents
+
+- [Pre-Requisites](#pre-requisites)
+- [Installation](#installation)
+- [Contributing](#contributing)
+
+### In this repo, you'll find a Basic Video Chat application:
+  * This sample application shows how to connect to an OpenTok session, publish a stream, and subscribe to multiple streams in an iOS and Android application using the OpenTok React Native API.
+
+## Pre-Requisites:
+
+1. Install [node.js](https://nodejs.org/)
+
+2. Install Watchman: `brew install watchman`
+
+3. Install React Native CLI: `npm install -g react-native-cli`
+
+4. Install and update [Xcode](https://developer.apple.com/xcode/) (you will need a Mac)
+* React Native iOS installation [instructions](https://facebook.github.io/react-native/docs/getting-started.html)
+
+5. Install and update [Android Studio](https://developer.android.com/studio/index.html)
+* React Native Android installation [instructions](https://facebook.github.io/react-native/docs/getting-started.html)
+
+## Installation:
+
+1. Clone this repo
+
+2. In your terminal, change your directory to the root of the sample project you want to run.
+
+3. Run the command:
+ 
+        npm install
+    to install required node modules
+
+4. For iOS:
+  * `cd ios`
+  * `pod install`
+
+## Configuring the application
+
+Before running the application, you need to configure it to use the API key for your OpenTok project, along with an OpenTok session ID and token. For development purposes, you can obtain a session ID and token by navigating to your [TokBox account](https://tokbox.com/account/#/) page, selecting a project, and scrolling to the bottom of the page where it says `Generate Token`.
+
+Open the `src/App.js` file in your project and set the `this.apiKey`, `this.sessionId`, and `this.token` values to the API key, session ID, and token you obtained from your TokBox account:
+```
+// Set Credentials
+this.apiKey = '';    // Add your API key.
+this.sessionId = ''; // Add the session ID.
+this.token = '';     // Add the token.
+```
+An OpenTok session connects different clients letting them share audio-video streams and send messages. Clients in the same session can include iOS, Android, and web browsers.
+
+For testing, you can use a session ID and token generated at your TokBox account page. However, the final application should obtain these values using the OpenTok server SDKs. For more information, see the OpenTok [server SDK guides](https://tokbox.com/developer/sdks/server/) on session and token creation.
+
+## Running the application
+
+#### For Android
+
+1. In the root directory of this project, run `npm run android`.
+
+##### Note: If you're running the app on the simulator, you will see a simulation for your publisher because the simulator doesn't have a camera.
+
+#### For iOS
+
+##### Camera & Microphone Permissions
+
+Add the following to the project's `info.plist` file:
+ ```
+ <key>NSCameraUsageDescription</key>
+ <string>The camera is required to publish video</string>
+ <key>NSMicrophoneUsageDescription</key>
+ <string>The microphone is required to publish audio</string>
+ ```
+Make sure to update the description of each permission request to what best fits your needs.
+
+1. In the root directory of this project, run `npm run ios`.
+
+##### Note: If you're running the app on the simulator, you will see a simulation for your publisher because the simulator doesn't have a camera.
+
+## Contributing
+
+If you make changes to the project that you would like to contribute back then please follow the [contributing guidelines](CONTRIBUTING.md). All contributions are greatly appreciated!

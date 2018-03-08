@@ -1,0 +1,37 @@
+{
+  "name": "BasicVideoChat",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Sample Live Video Applications for iOS and Android using OpenTok React Native",  
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "test": "jest"
+  },
+  "keywords": [
+    "tokbox",
+    "opentok",
+    "react",
+    "react-native",
+    "video",
+    "webrtc",
+    "ios",
+    "android"
+  ],
+  "author": "Manik Sachdeva <msach22gmail.com>",  
+  "dependencies": {
+    "opentok-react-native": "^0.2.1",
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.51.0"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.1",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.2",
+    "react-test-renderer": "^16.3.0-alpha.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
