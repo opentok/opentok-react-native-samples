@@ -38,6 +38,14 @@
   * `cd ios`
   * `pod install`
 
+4. For Android:
+  * `react-native link`
+  *  Add the following to your project's `build.gradle` file: 
+
+            maven {
+                url "http://tokbox.bintray.com/maven"
+            }
+
 ## Configuring the application
 
 Before running the application, you need to configure it to use the API key for your OpenTok project, along with an OpenTok session ID and token. For development purposes, you can obtain a session ID and token by navigating to your [TokBox account](https://tokbox.com/account/#/) page, selecting a project, and scrolling to the bottom of the page where it says `Generate Token`.
