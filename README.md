@@ -71,17 +71,6 @@ For testing, you can use a session ID and token generated at your TokBox account
 
 #### For iOS
 
-##### Camera & Microphone Permissions
-
-Add the following to the project's `info.plist` file:
- ```
- <key>NSCameraUsageDescription</key>
- <string>The camera is required to publish video</string>
- <key>NSMicrophoneUsageDescription</key>
- <string>The microphone is required to publish audio</string>
- ```
-Make sure to update the description of each permission request to what best fits your needs.
-
 1. In the root directory of this project, run `npm run ios`.
 
 ##### Note: If you're running the app on the simulator, you will see a simulation for your publisher because the simulator doesn't have a camera.
