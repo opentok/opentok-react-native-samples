@@ -1,3 +1,5 @@
 rootProject.name = 'Signaling'
+include ':opentok-react-native'
+project(':opentok-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/opentok-react-native/android')
 
 include ':app'

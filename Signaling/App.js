@@ -1,58 +1,91 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { View, Button, TextInput, StyleSheet, FlatList, Text } from 'react-native';
+import { OTSession } from 'opentok-react-native';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.apiKey = '';
+    this.sessionId = '';
+    this.token = '';
+    this.state = {
+      signal: {
+        data: '',
+        type: '',
+      },
+      text: '',
+      messages: [],
+    };
+    this.sessionEventHandlers = {
+      signal: (event) => {
+        if (event.data) {
+          const myConnectionId = this.session.getSessionInfo().connection.connectionId;
+          const oldMessages = this.state.messages;
+          const messages = event.connectionId === myConnectionId ? [...oldMessages, {data: `Me: ${event.data}`}] : [...oldMessages, {data: `Other: ${event.data}`}];
+          this.setState({
+            messages,
+          });
+        }
+      },
+    };
+  }
+  sendSignal() {
+    if (this.state.text) {
+      this.setState({
+        signal: {
+          type: '',
+          data: this.state.text,
+        },
+        text: '',
+      });
+    }
+  }
+  _keyExtractor = (item, index) => index;
+  _renderItem = ({item}) => (
+    <Text style={styles.item}>{item.data}</Text>
+  );
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+      <View style={{ flex: 1 }}>
+        <Text style={styles.mainText}> OpenTok React Native Signaling Sample</Text>
+        <OTSession 
+          apiKey={this.apiKey}
+          sessionId={this.sessionId}
+          token={this.token}
+          signal={this.state.signal}
+          eventHandlers={this.sessionEventHandlers}
+          ref={(instance) => {
+            this.session = instance;
+          }}
+        />
+        <TextInput
+          style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+          onChangeText={(text) => { this.setState({ text }); }}
+          value={this.state.text}
+        />
+        <Button
+          onPress={() => { this.sendSignal(); }}
+          title="Send Signal"
+        />
+        <FlatList
+          data={this.state.messages}
+          renderItem={this._renderItem}
+          keyExtractor={this._keyExtractor}
+        />
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
   },
-  welcome: {
+  mainText: {
     fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+    marginTop: 30,
+    marginBottom: 10,
+  }
+})
