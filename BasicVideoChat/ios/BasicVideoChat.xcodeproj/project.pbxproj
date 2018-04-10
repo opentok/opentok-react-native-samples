@@ -37,15 +37,15 @@
 		2DCD954D1E0B4F2C00145EB5 /* BasicVideoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BasicVideoChatTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		9C57AEF92051F0B700C18B0F /* OTSubscriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEED2051F0B600C18B0F /* OTSubscriberManager.swift */; };
-		9C57AEFA2051F0B700C18B0F /* OTSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEEE2051F0B600C18B0F /* OTSessionManager.swift */; };
-		9C57AEFB2051F0B700C18B0F /* OTSubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEEF2051F0B600C18B0F /* OTSubscriberView.swift */; };
-		9C57AEFC2051F0B700C18B0F /* OTSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEF02051F0B600C18B0F /* OTSessionManager.m */; };
-		9C57AEFD2051F0B700C18B0F /* OTRN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEF12051F0B600C18B0F /* OTRN.swift */; };
-		9C57AEFE2051F0B700C18B0F /* OTPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEF22051F0B600C18B0F /* OTPublisher.m */; };
-		9C57AEFF2051F0B700C18B0F /* OTPublisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEF52051F0B700C18B0F /* OTPublisherManager.swift */; };
-		9C57AF002051F0B700C18B0F /* OTSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEF72051F0B700C18B0F /* OTSubscriber.m */; };
-		9C57AF012051F0B700C18B0F /* OTPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AEF82051F0B700C18B0F /* OTPublisherView.swift */; };
+		9CBB9A99207C7BCC00A391B3 /* OTSubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A8E207C7BCA00A391B3 /* OTSubscriberView.swift */; };
+		9CBB9A9A207C7BCC00A391B3 /* OTSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A8F207C7BCB00A391B3 /* OTSessionManager.swift */; };
+		9CBB9A9B207C7BCC00A391B3 /* OTPublisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A90207C7BCB00A391B3 /* OTPublisherManager.swift */; };
+		9CBB9A9C207C7BCC00A391B3 /* OTSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A91207C7BCB00A391B3 /* OTSessionManager.m */; };
+		9CBB9A9D207C7BCC00A391B3 /* OTPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A92207C7BCB00A391B3 /* OTPublisherView.swift */; };
+		9CBB9A9E207C7BCC00A391B3 /* OTPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A93207C7BCB00A391B3 /* OTPublisher.m */; };
+		9CBB9A9F207C7BCC00A391B3 /* OTRN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A95207C7BCB00A391B3 /* OTRN.swift */; };
+		9CBB9AA0207C7BCC00A391B3 /* OTSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A97207C7BCB00A391B3 /* OTSubscriber.m */; };
+		9CBB9AA1207C7BCC00A391B3 /* OTSubscriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A98207C7BCB00A391B3 /* OTSubscriberManager.swift */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -260,6 +260,48 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		9CBB9A82207C7BA300A391B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		9CBB9A84207C7BA300A391B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
+			remoteInfo = "third-party-tvOS";
+		};
+		9CBB9A86207C7BA300A391B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
+			remoteInfo = "double-conversion";
+		};
+		9CBB9A88207C7BA300A391B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
+			remoteInfo = "double-conversion-tvOS";
+		};
+		9CBB9A8A207C7BA300A391B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
+			remoteInfo = privatedata;
+		};
+		9CBB9A8C207C7BA300A391B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
+			remoteInfo = "privatedata-tvOS";
+		};
 		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -298,18 +340,18 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		992C7F7607583A2AF3533B1E /* Pods_BasicVideoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicVideoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C57AEEC2051F0B600C18B0F /* BasicVideoChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicVideoChat-Bridging-Header.h"; sourceTree = "<group>"; };
-		9C57AEED2051F0B600C18B0F /* OTSubscriberManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTSubscriberManager.swift; sourceTree = "<group>"; };
-		9C57AEEE2051F0B600C18B0F /* OTSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTSessionManager.swift; sourceTree = "<group>"; };
-		9C57AEEF2051F0B600C18B0F /* OTSubscriberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTSubscriberView.swift; sourceTree = "<group>"; };
-		9C57AEF02051F0B600C18B0F /* OTSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSessionManager.m; sourceTree = "<group>"; };
-		9C57AEF12051F0B600C18B0F /* OTRN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTRN.swift; sourceTree = "<group>"; };
-		9C57AEF22051F0B600C18B0F /* OTPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPublisher.m; sourceTree = "<group>"; };
 		9C57AEF32051F0B600C18B0F /* BasicVideoChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BasicVideoChat-Bridging-Header.h"; sourceTree = "<group>"; };
-		9C57AEF42051F0B700C18B0F /* OTPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPublisher.h; sourceTree = "<group>"; };
-		9C57AEF52051F0B700C18B0F /* OTPublisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPublisherManager.swift; sourceTree = "<group>"; };
-		9C57AEF62051F0B700C18B0F /* OTSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSubscriber.h; sourceTree = "<group>"; };
-		9C57AEF72051F0B700C18B0F /* OTSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSubscriber.m; sourceTree = "<group>"; };
-		9C57AEF82051F0B700C18B0F /* OTPublisherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPublisherView.swift; sourceTree = "<group>"; };
+		9CBB9A8E207C7BCA00A391B3 /* OTSubscriberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSubscriberView.swift; path = "../node_modules/opentok-react-native/ios/OTSubscriberView.swift"; sourceTree = "<group>"; };
+		9CBB9A8F207C7BCB00A391B3 /* OTSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSessionManager.swift; path = "../node_modules/opentok-react-native/ios/OTSessionManager.swift"; sourceTree = "<group>"; };
+		9CBB9A90207C7BCB00A391B3 /* OTPublisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPublisherManager.swift; path = "../node_modules/opentok-react-native/ios/OTPublisherManager.swift"; sourceTree = "<group>"; };
+		9CBB9A91207C7BCB00A391B3 /* OTSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTSessionManager.m; path = "../node_modules/opentok-react-native/ios/OTSessionManager.m"; sourceTree = "<group>"; };
+		9CBB9A92207C7BCB00A391B3 /* OTPublisherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPublisherView.swift; path = "../node_modules/opentok-react-native/ios/OTPublisherView.swift"; sourceTree = "<group>"; };
+		9CBB9A93207C7BCB00A391B3 /* OTPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTPublisher.m; path = "../node_modules/opentok-react-native/ios/OTPublisher.m"; sourceTree = "<group>"; };
+		9CBB9A94207C7BCB00A391B3 /* OTPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTPublisher.h; path = "../node_modules/opentok-react-native/ios/OTPublisher.h"; sourceTree = "<group>"; };
+		9CBB9A95207C7BCB00A391B3 /* OTRN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTRN.swift; path = "../node_modules/opentok-react-native/ios/OTRN.swift"; sourceTree = "<group>"; };
+		9CBB9A96207C7BCB00A391B3 /* OTSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTSubscriber.h; path = "../node_modules/opentok-react-native/ios/OTSubscriber.h"; sourceTree = "<group>"; };
+		9CBB9A97207C7BCB00A391B3 /* OTSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTSubscriber.m; path = "../node_modules/opentok-react-native/ios/OTSubscriber.m"; sourceTree = "<group>"; };
+		9CBB9A98207C7BCB00A391B3 /* OTSubscriberManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSubscriberManager.swift; path = "../node_modules/opentok-react-native/ios/OTSubscriberManager.swift"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		EF6365ED66A6031D695003F1 /* Pods-BasicVideoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicVideoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasicVideoChat/Pods-BasicVideoChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -451,18 +493,18 @@
 		13B07FAE1A68108700A75B9A /* BasicVideoChat */ = {
 			isa = PBXGroup;
 			children = (
+				9CBB9A94207C7BCB00A391B3 /* OTPublisher.h */,
+				9CBB9A93207C7BCB00A391B3 /* OTPublisher.m */,
+				9CBB9A90207C7BCB00A391B3 /* OTPublisherManager.swift */,
+				9CBB9A92207C7BCB00A391B3 /* OTPublisherView.swift */,
+				9CBB9A95207C7BCB00A391B3 /* OTRN.swift */,
+				9CBB9A91207C7BCB00A391B3 /* OTSessionManager.m */,
+				9CBB9A8F207C7BCB00A391B3 /* OTSessionManager.swift */,
+				9CBB9A96207C7BCB00A391B3 /* OTSubscriber.h */,
+				9CBB9A97207C7BCB00A391B3 /* OTSubscriber.m */,
+				9CBB9A98207C7BCB00A391B3 /* OTSubscriberManager.swift */,
+				9CBB9A8E207C7BCA00A391B3 /* OTSubscriberView.swift */,
 				9C57AEF32051F0B600C18B0F /* BasicVideoChat-Bridging-Header.h */,
-				9C57AEF42051F0B700C18B0F /* OTPublisher.h */,
-				9C57AEF22051F0B600C18B0F /* OTPublisher.m */,
-				9C57AEF52051F0B700C18B0F /* OTPublisherManager.swift */,
-				9C57AEF82051F0B700C18B0F /* OTPublisherView.swift */,
-				9C57AEF12051F0B600C18B0F /* OTRN.swift */,
-				9C57AEF02051F0B600C18B0F /* OTSessionManager.m */,
-				9C57AEEE2051F0B600C18B0F /* OTSessionManager.swift */,
-				9C57AEF62051F0B700C18B0F /* OTSubscriber.h */,
-				9C57AEF72051F0B700C18B0F /* OTSubscriber.m */,
-				9C57AEED2051F0B600C18B0F /* OTSubscriberManager.swift */,
-				9C57AEEF2051F0B600C18B0F /* OTSubscriberView.swift */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -479,13 +521,19 @@
 			isa = PBXGroup;
 			children = (
 				146834041AC3E56700842450 /* libReact.a */,
+				3DAD3EA31DF850E9000B6D8A /* libReact.a */,
 				3DAD3EA51DF850E9000B6D8A /* libyoga.a */,
 				3DAD3EA71DF850E9000B6D8A /* libyoga.a */,
 				3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
-				3DAD3EA31DF850E9000B6D8A /* libReact-tvOS.a */,
+				9CBB9A83207C7BA300A391B3 /* libthird-party.a */,
+				9CBB9A85207C7BA300A391B3 /* libthird-party.a */,
+				9CBB9A87207C7BA300A391B3 /* libdouble-conversion.a */,
+				9CBB9A89207C7BA300A391B3 /* libdouble-conversion.a */,
+				9CBB9A8B207C7BA300A391B3 /* libprivatedata.a */,
+				9CBB9A8D207C7BA300A391B3 /* libprivatedata-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -885,10 +933,10 @@
 			remoteRef = 3DAD3E981DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3DAD3EA31DF850E9000B6D8A /* libReact-tvOS.a */ = {
+		3DAD3EA31DF850E9000B6D8A /* libReact.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libReact-tvOS.a";
+			path = libReact.a;
 			remoteRef = 3DAD3EA21DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -960,6 +1008,48 @@
 			fileType = archive.ar;
 			path = libRCTText.a;
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBB9A83207C7BA300A391B3 /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 9CBB9A82207C7BA300A391B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBB9A85207C7BA300A391B3 /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 9CBB9A84207C7BA300A391B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBB9A87207C7BA300A391B3 /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 9CBB9A86207C7BA300A391B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBB9A89207C7BA300A391B3 /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 9CBB9A88207C7BA300A391B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBB9A8B207C7BA300A391B3 /* libprivatedata.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libprivatedata.a;
+			remoteRef = 9CBB9A8A207C7BA300A391B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBB9A8D207C7BA300A391B3 /* libprivatedata-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libprivatedata-tvOS.a";
+			remoteRef = 9CBB9A8C207C7BA300A391B3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
@@ -1097,17 +1187,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C57AF002051F0B700C18B0F /* OTSubscriber.m in Sources */,
-				9C57AEF92051F0B700C18B0F /* OTSubscriberManager.swift in Sources */,
-				9C57AEFE2051F0B700C18B0F /* OTPublisher.m in Sources */,
-				9C57AF012051F0B700C18B0F /* OTPublisherView.swift in Sources */,
-				9C57AEFB2051F0B700C18B0F /* OTSubscriberView.swift in Sources */,
+				9CBB9AA1207C7BCC00A391B3 /* OTSubscriberManager.swift in Sources */,
+				9CBB9AA0207C7BCC00A391B3 /* OTSubscriber.m in Sources */,
+				9CBB9A9B207C7BCC00A391B3 /* OTPublisherManager.swift in Sources */,
+				9CBB9A9E207C7BCC00A391B3 /* OTPublisher.m in Sources */,
+				9CBB9A99207C7BCC00A391B3 /* OTSubscriberView.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				9C57AEFF2051F0B700C18B0F /* OTPublisherManager.swift in Sources */,
-				9C57AEFC2051F0B700C18B0F /* OTSessionManager.m in Sources */,
+				9CBB9A9D207C7BCC00A391B3 /* OTPublisherView.swift in Sources */,
+				9CBB9A9F207C7BCC00A391B3 /* OTRN.swift in Sources */,
+				9CBB9A9C207C7BCC00A391B3 /* OTSessionManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				9C57AEFA2051F0B700C18B0F /* OTSessionManager.swift in Sources */,
-				9C57AEFD2051F0B700C18B0F /* OTRN.swift in Sources */,
+				9CBB9A9A207C7BCC00A391B3 /* OTSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 {
   "name": "BasicVideoChat",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "private": true,
   "description": "Sample Live Video Applications for iOS and Android using OpenTok React Native",
   "scripts": {
@@ -21,9 +21,9 @@
   ],
   "author": "Manik Sachdeva <msach22gmail.com>",
   "dependencies": {
-    "opentok-react-native": "^0.2.4",
+    "opentok-react-native": "^0.3.5",
     "react": "^16.3.0-alpha.1",
-    "react-native": "0.51.0"
+    "react-native": "^0.51.1"
   },
   "devDependencies": {
     "babel-jest": "22.4.1",

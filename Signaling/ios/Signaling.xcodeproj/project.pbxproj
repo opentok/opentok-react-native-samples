@@ -36,15 +36,15 @@
 		2DCD954D1E0B4F2C00145EB5 /* SignalingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SignalingTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		9C55D1C5205D9A2A009AE57E /* OTPublisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1B9205D9A29009AE57E /* OTPublisherManager.swift */; };
-		9C55D1C6205D9A2A009AE57E /* OTRN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1BA205D9A29009AE57E /* OTRN.swift */; };
-		9C55D1C7205D9A2A009AE57E /* OTSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1BB205D9A29009AE57E /* OTSessionManager.swift */; };
-		9C55D1C8205D9A2A009AE57E /* OTSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1BD205D9A29009AE57E /* OTSubscriber.m */; };
-		9C55D1C9205D9A2A009AE57E /* OTSubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1BE205D9A29009AE57E /* OTSubscriberView.swift */; };
-		9C55D1CA205D9A2A009AE57E /* OTPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1BF205D9A29009AE57E /* OTPublisher.m */; };
-		9C55D1CB205D9A2A009AE57E /* OTPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1C1205D9A29009AE57E /* OTPublisherView.swift */; };
-		9C55D1CC205D9A2A009AE57E /* OTSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1C3205D9A2A009AE57E /* OTSessionManager.m */; };
-		9C55D1CD205D9A2A009AE57E /* OTSubscriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55D1C4205D9A2A009AE57E /* OTSubscriberManager.swift */; };
+		9CBB9ADC207D0BE700A391B3 /* OTSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD2207D0BE600A391B3 /* OTSessionManager.swift */; };
+		9CBB9ADD207D0BE700A391B3 /* OTPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD3207D0BE600A391B3 /* OTPublisherView.swift */; };
+		9CBB9ADE207D0BE700A391B3 /* OTPublisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD4207D0BE600A391B3 /* OTPublisherManager.swift */; };
+		9CBB9ADF207D0BE700A391B3 /* OTSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD6207D0BE600A391B3 /* OTSessionManager.m */; };
+		9CBB9AE0207D0BE700A391B3 /* OTSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD7207D0BE600A391B3 /* OTSubscriber.m */; };
+		9CBB9AE1207D0BE700A391B3 /* OTSubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD8207D0BE600A391B3 /* OTSubscriberView.swift */; };
+		9CBB9AE2207D0BE700A391B3 /* OTSubscriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD9207D0BE700A391B3 /* OTSubscriberManager.swift */; };
+		9CBB9AE3207D0BE700A391B3 /* OTRN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9ADA207D0BE700A391B3 /* OTRN.swift */; };
+		9CBB9AE4207D0BE700A391B3 /* OTPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9ADB207D0BE700A391B3 /* OTPublisher.m */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		F87B6996073F75CC222F8478 /* Pods_Signaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBAC1B918C540F46EDEE0FE /* Pods_Signaling.framework */; };
 /* End PBXBuildFile section */
@@ -338,18 +338,18 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		9C55D1B9205D9A29009AE57E /* OTPublisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPublisherManager.swift; sourceTree = "<group>"; };
-		9C55D1BA205D9A29009AE57E /* OTRN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTRN.swift; sourceTree = "<group>"; };
-		9C55D1BB205D9A29009AE57E /* OTSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTSessionManager.swift; sourceTree = "<group>"; };
-		9C55D1BC205D9A29009AE57E /* OTSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSubscriber.h; sourceTree = "<group>"; };
-		9C55D1BD205D9A29009AE57E /* OTSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSubscriber.m; sourceTree = "<group>"; };
-		9C55D1BE205D9A29009AE57E /* OTSubscriberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTSubscriberView.swift; sourceTree = "<group>"; };
-		9C55D1BF205D9A29009AE57E /* OTPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPublisher.m; sourceTree = "<group>"; };
 		9C55D1C0205D9A29009AE57E /* Signaling-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Signaling-Bridging-Header.h"; sourceTree = "<group>"; };
-		9C55D1C1205D9A29009AE57E /* OTPublisherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPublisherView.swift; sourceTree = "<group>"; };
-		9C55D1C2205D9A2A009AE57E /* OTPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPublisher.h; sourceTree = "<group>"; };
-		9C55D1C3205D9A2A009AE57E /* OTSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSessionManager.m; sourceTree = "<group>"; };
-		9C55D1C4205D9A2A009AE57E /* OTSubscriberManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTSubscriberManager.swift; sourceTree = "<group>"; };
+		9CBB9AD1207D0BE600A391B3 /* OTPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTPublisher.h; path = "../node_modules/opentok-react-native/ios/OTPublisher.h"; sourceTree = "<group>"; };
+		9CBB9AD2207D0BE600A391B3 /* OTSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSessionManager.swift; path = "../node_modules/opentok-react-native/ios/OTSessionManager.swift"; sourceTree = "<group>"; };
+		9CBB9AD3207D0BE600A391B3 /* OTPublisherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPublisherView.swift; path = "../node_modules/opentok-react-native/ios/OTPublisherView.swift"; sourceTree = "<group>"; };
+		9CBB9AD4207D0BE600A391B3 /* OTPublisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPublisherManager.swift; path = "../node_modules/opentok-react-native/ios/OTPublisherManager.swift"; sourceTree = "<group>"; };
+		9CBB9AD5207D0BE600A391B3 /* OTSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTSubscriber.h; path = "../node_modules/opentok-react-native/ios/OTSubscriber.h"; sourceTree = "<group>"; };
+		9CBB9AD6207D0BE600A391B3 /* OTSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTSessionManager.m; path = "../node_modules/opentok-react-native/ios/OTSessionManager.m"; sourceTree = "<group>"; };
+		9CBB9AD7207D0BE600A391B3 /* OTSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTSubscriber.m; path = "../node_modules/opentok-react-native/ios/OTSubscriber.m"; sourceTree = "<group>"; };
+		9CBB9AD8207D0BE600A391B3 /* OTSubscriberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSubscriberView.swift; path = "../node_modules/opentok-react-native/ios/OTSubscriberView.swift"; sourceTree = "<group>"; };
+		9CBB9AD9207D0BE700A391B3 /* OTSubscriberManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSubscriberManager.swift; path = "../node_modules/opentok-react-native/ios/OTSubscriberManager.swift"; sourceTree = "<group>"; };
+		9CBB9ADA207D0BE700A391B3 /* OTRN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTRN.swift; path = "../node_modules/opentok-react-native/ios/OTRN.swift"; sourceTree = "<group>"; };
+		9CBB9ADB207D0BE700A391B3 /* OTPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTPublisher.m; path = "../node_modules/opentok-react-native/ios/OTPublisher.m"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		D3E2670D63FEE76C1CA32414 /* Pods-Signaling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signaling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Signaling/Pods-Signaling.release.xcconfig"; sourceTree = "<group>"; };
 		DBBAC1B918C540F46EDEE0FE /* Pods_Signaling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Signaling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -501,17 +501,17 @@
 		13B07FAE1A68108700A75B9A /* Signaling */ = {
 			isa = PBXGroup;
 			children = (
-				9C55D1C2205D9A2A009AE57E /* OTPublisher.h */,
-				9C55D1BF205D9A29009AE57E /* OTPublisher.m */,
-				9C55D1B9205D9A29009AE57E /* OTPublisherManager.swift */,
-				9C55D1C1205D9A29009AE57E /* OTPublisherView.swift */,
-				9C55D1BA205D9A29009AE57E /* OTRN.swift */,
-				9C55D1C3205D9A2A009AE57E /* OTSessionManager.m */,
-				9C55D1BB205D9A29009AE57E /* OTSessionManager.swift */,
-				9C55D1BC205D9A29009AE57E /* OTSubscriber.h */,
-				9C55D1BD205D9A29009AE57E /* OTSubscriber.m */,
-				9C55D1C4205D9A2A009AE57E /* OTSubscriberManager.swift */,
-				9C55D1BE205D9A29009AE57E /* OTSubscriberView.swift */,
+				9CBB9AD1207D0BE600A391B3 /* OTPublisher.h */,
+				9CBB9ADB207D0BE700A391B3 /* OTPublisher.m */,
+				9CBB9AD4207D0BE600A391B3 /* OTPublisherManager.swift */,
+				9CBB9AD3207D0BE600A391B3 /* OTPublisherView.swift */,
+				9CBB9ADA207D0BE700A391B3 /* OTRN.swift */,
+				9CBB9AD6207D0BE600A391B3 /* OTSessionManager.m */,
+				9CBB9AD2207D0BE600A391B3 /* OTSessionManager.swift */,
+				9CBB9AD5207D0BE600A391B3 /* OTSubscriber.h */,
+				9CBB9AD7207D0BE600A391B3 /* OTSubscriber.m */,
+				9CBB9AD9207D0BE700A391B3 /* OTSubscriberManager.swift */,
+				9CBB9AD8207D0BE600A391B3 /* OTSubscriberView.swift */,
 				9C55D1C0205D9A29009AE57E /* Signaling-Bridging-Header.h */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -1185,17 +1185,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C55D1CD205D9A2A009AE57E /* OTSubscriberManager.swift in Sources */,
-				9C55D1CB205D9A2A009AE57E /* OTPublisherView.swift in Sources */,
-				9C55D1C8205D9A2A009AE57E /* OTSubscriber.m in Sources */,
-				9C55D1CA205D9A2A009AE57E /* OTPublisher.m in Sources */,
-				9C55D1C6205D9A2A009AE57E /* OTRN.swift in Sources */,
-				9C55D1C9205D9A2A009AE57E /* OTSubscriberView.swift in Sources */,
-				9C55D1C7205D9A2A009AE57E /* OTSessionManager.swift in Sources */,
+				9CBB9ADE207D0BE700A391B3 /* OTPublisherManager.swift in Sources */,
+				9CBB9ADD207D0BE700A391B3 /* OTPublisherView.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				9C55D1C5205D9A2A009AE57E /* OTPublisherManager.swift in Sources */,
+				9CBB9AE1207D0BE700A391B3 /* OTSubscriberView.swift in Sources */,
+				9CBB9AE0207D0BE700A391B3 /* OTSubscriber.m in Sources */,
+				9CBB9ADF207D0BE700A391B3 /* OTSessionManager.m in Sources */,
+				9CBB9AE2207D0BE700A391B3 /* OTSubscriberManager.swift in Sources */,
+				9CBB9ADC207D0BE700A391B3 /* OTSessionManager.swift in Sources */,
+				9CBB9AE4207D0BE700A391B3 /* OTPublisher.m in Sources */,
+				9CBB9AE3207D0BE700A391B3 /* OTRN.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				9C55D1CC205D9A2A009AE57E /* OTSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
