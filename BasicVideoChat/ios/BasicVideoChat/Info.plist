@@ -43,7 +43,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>The camera is required to publish video</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>The camera is required to publish audio</string>
+	<string>The microphone is required to publish audio</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
