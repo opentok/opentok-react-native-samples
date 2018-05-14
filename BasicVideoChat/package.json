@@ -1,6 +1,6 @@
 {
   "name": "BasicVideoChat",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "description": "Sample Live Video Applications for iOS and Android using OpenTok React Native",
   "scripts": {
