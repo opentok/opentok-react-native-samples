@@ -45,6 +45,7 @@
 		9CBB9AE2207D0BE700A391B3 /* OTSubscriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9AD9207D0BE700A391B3 /* OTSubscriberManager.swift */; };
 		9CBB9AE3207D0BE700A391B3 /* OTRN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9ADA207D0BE700A391B3 /* OTRN.swift */; };
 		9CBB9AE4207D0BE700A391B3 /* OTPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9ADB207D0BE700A391B3 /* OTPublisher.m */; };
+		9CC0BC1120AA0C0900DA6CAF /* OTScreenCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0BBED20AA0C0900DA6CAF /* OTScreenCapturer.swift */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		F87B6996073F75CC222F8478 /* Pods_Signaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBAC1B918C540F46EDEE0FE /* Pods_Signaling.framework */; };
 /* End PBXBuildFile section */
@@ -350,6 +351,7 @@
 		9CBB9AD9207D0BE700A391B3 /* OTSubscriberManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSubscriberManager.swift; path = "../node_modules/opentok-react-native/ios/OTSubscriberManager.swift"; sourceTree = "<group>"; };
 		9CBB9ADA207D0BE700A391B3 /* OTRN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTRN.swift; path = "../node_modules/opentok-react-native/ios/OTRN.swift"; sourceTree = "<group>"; };
 		9CBB9ADB207D0BE700A391B3 /* OTPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTPublisher.m; path = "../node_modules/opentok-react-native/ios/OTPublisher.m"; sourceTree = "<group>"; };
+		9CC0BBED20AA0C0900DA6CAF /* OTScreenCapturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTScreenCapturer.swift; path = "../node_modules/opentok-react-native/ios/OTScreenCapturer.swift"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		D3E2670D63FEE76C1CA32414 /* Pods-Signaling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signaling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Signaling/Pods-Signaling.release.xcconfig"; sourceTree = "<group>"; };
 		DBBAC1B918C540F46EDEE0FE /* Pods_Signaling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Signaling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -501,6 +503,7 @@
 		13B07FAE1A68108700A75B9A /* Signaling */ = {
 			isa = PBXGroup;
 			children = (
+				9CC0BBED20AA0C0900DA6CAF /* OTScreenCapturer.swift */,
 				9CBB9AD1207D0BE600A391B3 /* OTPublisher.h */,
 				9CBB9ADB207D0BE700A391B3 /* OTPublisher.m */,
 				9CBB9AD4207D0BE600A391B3 /* OTPublisherManager.swift */,
@@ -1187,6 +1190,7 @@
 			files = (
 				9CBB9ADE207D0BE700A391B3 /* OTPublisherManager.swift in Sources */,
 				9CBB9ADD207D0BE700A391B3 /* OTPublisherView.swift in Sources */,
+				9CC0BC1120AA0C0900DA6CAF /* OTScreenCapturer.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				9CBB9AE1207D0BE700A391B3 /* OTSubscriberView.swift in Sources */,
 				9CBB9AE0207D0BE700A391B3 /* OTSubscriber.m in Sources */,
