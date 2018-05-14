@@ -7,9 +7,9 @@
 - [Contributing](#contributing)
 
 ### In this repo, you'll find:
- * Basic Video Chat:
+ * [Basic Video Chat](https://github.com/opentok/opentok-react-native-samples/tree/master/BasicVideoChat):
     * This sample application shows how to connect to an OpenTok session, publish a stream, and subscribe to multiple streams for both iOS and Android using the OpenTok React Native API.
- * Signaling:
+ * [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
     * This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
 
 ## Pre-Requisites:
