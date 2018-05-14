@@ -21,7 +21,7 @@
   ],
   "author": "Manik Sachdeva <msach22gmail.com>",
   "dependencies": {
-    "opentok-react-native": "^0.5.2",
+    "opentok-react-native": "^0.6.2",
     "react": "^16.3.0-alpha.1",
     "react-native": "^0.51.1"
   },

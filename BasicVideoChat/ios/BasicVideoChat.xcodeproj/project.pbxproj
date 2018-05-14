@@ -46,6 +46,7 @@
 		9CBB9A9F207C7BCC00A391B3 /* OTRN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A95207C7BCB00A391B3 /* OTRN.swift */; };
 		9CBB9AA0207C7BCC00A391B3 /* OTSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A97207C7BCB00A391B3 /* OTSubscriber.m */; };
 		9CBB9AA1207C7BCC00A391B3 /* OTSubscriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB9A98207C7BCB00A391B3 /* OTSubscriberManager.swift */; };
+		9CC0BBE020AA0B5900DA6CAF /* OTScreenCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0BBBC20AA0B5900DA6CAF /* OTScreenCapturer.swift */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -352,6 +353,7 @@
 		9CBB9A96207C7BCB00A391B3 /* OTSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTSubscriber.h; path = "../node_modules/opentok-react-native/ios/OTSubscriber.h"; sourceTree = "<group>"; };
 		9CBB9A97207C7BCB00A391B3 /* OTSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTSubscriber.m; path = "../node_modules/opentok-react-native/ios/OTSubscriber.m"; sourceTree = "<group>"; };
 		9CBB9A98207C7BCB00A391B3 /* OTSubscriberManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTSubscriberManager.swift; path = "../node_modules/opentok-react-native/ios/OTSubscriberManager.swift"; sourceTree = "<group>"; };
+		9CC0BBBC20AA0B5900DA6CAF /* OTScreenCapturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTScreenCapturer.swift; path = "../node_modules/opentok-react-native/ios/OTScreenCapturer.swift"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		EF6365ED66A6031D695003F1 /* Pods-BasicVideoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicVideoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasicVideoChat/Pods-BasicVideoChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -493,6 +495,7 @@
 		13B07FAE1A68108700A75B9A /* BasicVideoChat */ = {
 			isa = PBXGroup;
 			children = (
+				9CC0BBBC20AA0B5900DA6CAF /* OTScreenCapturer.swift */,
 				9CBB9A94207C7BCB00A391B3 /* OTPublisher.h */,
 				9CBB9A93207C7BCB00A391B3 /* OTPublisher.m */,
 				9CBB9A90207C7BCB00A391B3 /* OTPublisherManager.swift */,
@@ -1189,6 +1192,7 @@
 			files = (
 				9CBB9AA1207C7BCC00A391B3 /* OTSubscriberManager.swift in Sources */,
 				9CBB9AA0207C7BCC00A391B3 /* OTSubscriber.m in Sources */,
+				9CC0BBE020AA0B5900DA6CAF /* OTScreenCapturer.swift in Sources */,
 				9CBB9A9B207C7BCC00A391B3 /* OTPublisherManager.swift in Sources */,
 				9CBB9A9E207C7BCC00A391B3 /* OTPublisher.m in Sources */,
 				9CBB9A99207C7BCC00A391B3 /* OTSubscriberView.swift in Sources */,
