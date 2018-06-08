@@ -1,14 +1,10 @@
-# OpenTok React Native Samples
-
-![OpenTok Labs](https://d26dzxoao6i3hh.cloudfront.net/items/0U1R0a0e2g1E361H0x3c/Image%202017-11-22%20at%2012.16.38%20PM.png?v=2507a2df)
-
-## BasicVideoChat
+# BasicVideoChat
 
 This sample application shows how to connect to an OpenTok session,
 publish a stream, and subscribe to multiple streams for both iOS and
 Android using the OpenTok React Native API.
 
-### Setup
+## Setup
 
 1. Clone this repo
 
@@ -30,7 +26,7 @@ npm install
 
 to install required node modules
 
-### Configure
+## Configure
 
 Before running the application, you need to configure it to use the API key
 for your OpenTok project, along with an OpenTok session ID and token.
@@ -59,18 +55,18 @@ the OpenTok server SDKs. For more information, see the OpenTok
 [server SDK guides](https://tokbox.com/developer/sdks/server/) on session
 and token creation.
 
-### Run the App
+## Run the App
 
-##### Android
+### Android
 
-1. In the root directory of this project, run `npm run android`.
+- Run `npm run android`.
 
 ***Note: If you're running the app on the simulator, you will see a simulation
 for your publisher because the simulator doesn't have a camera.***
 
-##### iOS
+### iOS
 
-1. In the root directory of this project, run `npm run ios`.
+- Run `npm run ios`.
 
 ***Note: If you're running the app on the simulator, you will see a simulation
 for your publisher because the simulator doesn't have a camera.***
