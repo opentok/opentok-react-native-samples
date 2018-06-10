@@ -4,35 +4,13 @@ This sample application shows how to connect to an OpenTok session and
 implement OpenTok Signaling to create a text chat for both iOS and Android
 using the OpenTok React Native API.
 
-## Setup
-
-1. Clone this repo
-
-```
-git clone https://github.com/opentok/opentok-react-native-samples
-```
-
-2. In your terminal, change your directory to this project
-
-```
-cd opentok-react-native-samples/Signaling
-```
-
-3. Run the command:
-
-```
-npm install
-```
-
-to install required node modules
-
 ## Configure
 
 Before running the application, you need to configure it to use the API key
-for your OpenTok project, along with an OpenTok session ID and token.
+of your OpenTok project, along with an OpenTok session ID and token.
 For development purposes, you can obtain a session ID and token by navigating
- to your [TokBox account](https://tokbox.com/account/#/) page, selecting a
- project, and scrolling to the bottom of the page where it says `Generate Token`.
+to your [TokBox account](https://tokbox.com/account/#/) page, selecting a
+project, and scrolling to the bottom of the page where it says `Generate Token`.
 
 Open the `src/App.js` file in your project and set the `this.apiKey`,
 `this.sessionId`, and `this.token` values to the API key, session ID,
@@ -55,7 +33,7 @@ the OpenTok server SDKs. For more information, see the OpenTok
 [server SDK guides](https://tokbox.com/developer/sdks/server/) on session
 and token creation.
 
-## Run the App
+## Run
 
 ### Android
 

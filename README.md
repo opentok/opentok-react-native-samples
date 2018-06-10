@@ -2,6 +2,9 @@
 
 ![OpenTok Labs](https://d26dzxoao6i3hh.cloudfront.net/items/0U1R0a0e2g1E361H0x3c/Image%202017-11-22%20at%2012.16.38%20PM.png?v=2507a2df)
 
+*These samples demonstrate how to use opentock-react-native to do video-calling
+in a React Native application.*
+
 ## Contents
 
 - [Pre-Requisites](#pre-requisites)
@@ -9,8 +12,12 @@
 - [Contributing](#contributing)
 
 ### In this repo, you'll find:
+
  * [Basic Video Chat](https://github.com/opentok/opentok-react-native-samples/tree/master/BasicVideoChat):
-    * This sample application shows how to connect to an OpenTok session, publish a stream, and subscribe to multiple streams for both iOS and Android using the OpenTok React Native API.
+    * This sample application shows how to connect to an OpenTok session,
+    publish a stream, and subscribe to multiple streams for both iOS and
+    Android using the OpenTok React Native API.
+
  * [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
     * This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
 
@@ -28,30 +35,19 @@
 5. Install and update [Android Studio](https://developer.android.com/studio/index.html)
 * React Native Android installation [instructions](https://facebook.github.io/react-native/docs/getting-started.html)
 
-## Installation
+## Setup
 
-To install this package in your project, run the following command:
+1. Clone this repo.
 
-```
-npm install opentok-react-native --save
-react-native link opentok-react-native
-```
+2. In your terminal, change your directory to the sample project you want:
 
-### For iOS:
+  - `cd BasicVideoChat/` or `cd Signaling/`
 
-* `cd ios`
-* `pod install`
+3. Install the required node modules: `npm install`
 
-2. For Android:
+### For iOS
 
-* `react-native link opentok-react-native`
-*  Add the following to your project's `build.gradle` file:
-
-```
-maven {
-    url "http://tokbox.bintray.com/maven"
-}
-```
+1. Install the Podfile's dependencies.`cd ios/ && pod install`
 
 ## Contributing
 
