@@ -47,7 +47,7 @@ in a React Native application.*
 
 ### For iOS
 
-1. Install the Podfile's dependencies.`cd ios/ && pod install`
+- Install the Podfile's dependencies: `cd ios/ && pod install`
 
 ## Contributing
 
