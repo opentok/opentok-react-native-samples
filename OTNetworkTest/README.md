@@ -34,14 +34,14 @@ Then, you can run it with the following steps:
 
 ### Android
 
-- Run `npm run android`.
+- Run `react-native run-android`.
 
 **_Note: If you're running the app on the simulator, you will see a simulation
 for your publisher because the simulator doesn't have a camera._**
 
 ### iOS
 
-- Run `npm run ios`.
+- Run `react-native run-ios`.
 
 **_Note: If you're running the app on the simulator, you will see a simulation
 for your publisher because the simulator doesn't have a camera._**
