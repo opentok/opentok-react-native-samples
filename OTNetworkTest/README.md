@@ -4,11 +4,11 @@ This sample application shows how to use the OpenTok React Native library to det
 stream to a test session and then uses the API to check the quality of that stream. Based on the
 quality, the app determines what the client can successfully publish to an OpenTok session:
 
-* The client can publish an audio-video stream at the specified resolution.
+- The client can publish an audio-video stream at the specified resolution.
 
-* The client can publish an audio-only stream.
+- The client can publish an audio-only stream.
 
-* The client is unable to publish.
+- The client is unable to publish.
 
 The sample app only subscribes to the test stream. It does not subscribe to other streams in the
 test session. Do not use the test session for your actual call. Use a separate OpenTok session
@@ -24,9 +24,9 @@ project, and scrolling to the bottom of the page where it says `Generate Token`.
 
 Then, you can run it with the following steps:
 
-1. `cp config.sample.js config.js`
+1. `cp config.sample.js config.json`
 1. Edit `config.js`:
-  1. Add your OpenTok API key, Session ID and Token (https://tokbox.com/account/)
+1. Add your OpenTok API key, Session ID and Token (https://tokbox.com/account/)
 
 **Note:** if you want to run the test in `audioOnly`, you can set the variable in the App.js file.
 
@@ -36,16 +36,15 @@ Then, you can run it with the following steps:
 
 - Run `npm run android`.
 
-***Note: If you're running the app on the simulator, you will see a simulation
-for your publisher because the simulator doesn't have a camera.***
+**_Note: If you're running the app on the simulator, you will see a simulation
+for your publisher because the simulator doesn't have a camera._**
 
 ### iOS
 
 - Run `npm run ios`.
 
-***Note: If you're running the app on the simulator, you will see a simulation
-for your publisher because the simulator doesn't have a camera.***
-
+**_Note: If you're running the app on the simulator, you will see a simulation
+for your publisher because the simulator doesn't have a camera._**
 
 ## Understanding the code
 
@@ -57,7 +56,7 @@ Upon publishing, the app subscribes to the test stream it publishes:
 /**
  * This function subscribe to his own stream.
  * It also initiates the audioStats and videoStats helpers
- * @param {*} stream 
+ * @param {*} stream
  */
 handleStreamCreatedEvent ( stream ) {
     this.AudioStatsHandler = new AudioStats();
@@ -97,17 +96,15 @@ init ( stats ) {
     }
 ```
 
-
-
 The `stats` object pass into the `VideoStats.init()` has properties that
 define statistics for the video:
 
-* `videoBytesReceived` -- The cumulative number of video bytes received by the subscriber.
+- `videoBytesReceived` -- The cumulative number of video bytes received by the subscriber.
 
-* `videoPacketsLost` -- The cumulative number of video packets lost by the subscriber.
+- `videoPacketsLost` -- The cumulative number of video packets lost by the subscriber.
 
-* `videoPacketsReceived` -- The cumulative number of video packets received by the
-   subscriber.
+- `videoPacketsReceived` -- The cumulative number of video packets received by the
+  subscriber.
 
 This `stats` object is passed into the `checkVideoStats()` method. This method calculates
 the video packet loss (based on the values of `stats.videoPacketsLost` and
