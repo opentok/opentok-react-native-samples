@@ -17,6 +17,8 @@ in a React Native application.*
     * This sample application shows how to connect to an OpenTok session,
     publish a stream, and subscribe to multiple streams for both iOS and
     Android using the OpenTok React Native API.
+ * [OT Network Test](https://github.com/nexmo-saleseng/opentok-react-native-samples/tree/feature.network-test-sample/OTNetworkTest):
+    * This sample application shows how to use the OpenTok React Native library to determine the appropriate audio and video settings to use in publishing a stream to an OpenTok session
 
  * [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
     * This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
