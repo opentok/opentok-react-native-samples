@@ -83,18 +83,18 @@ export default class App extends Component {
             },
             connected: () => {
                 console.log( '[subscriberEventHandlers - connected]' );
-                if (this.audioOnly) {
+                if ( this.audioOnly ) {
                     this.setState( {
                         subscriber: 'Connected', audioQualityTest: 'Running....',
                         videoQualityTest: 'Skipped'
                     } )
-                } else  {
+                } else {
                     this.setState( {
                         subscriber: 'Connected', audioQualityTest: 'Running....',
                         videoQualityTest: 'Running....'
                     } )
                 }
-                
+
             },
             disconnected: () => {
                 console.log( '[subscriberEventHandlers - disconnected]' );
@@ -133,12 +133,11 @@ export default class App extends Component {
      */
     handleStreamCreatedEvent ( stream ) {
         this.AudioStatsHandler = new AudioStats();
-        this.VideoStatsHandler = new VideoStats(this.audioOnly);
+        this.VideoStatsHandler = new VideoStats( this.audioOnly );
         this._subscriberComponent.streamCreatedHandler( stream, {
             subscribeToAudio: true,
             subscribeToVideo: true
         } );
-
     }
 
     render () {
@@ -151,8 +150,8 @@ export default class App extends Component {
                         <OTSession apiKey={this.apiKey} sessionId={this.sessionId} token={this.token}
                             eventHandlers={this.sessionEventHandlers} ref={component => this._sessionComponent = component}>
                             <OTPublisher style={{ width: '100%', height: 300 }} eventHandlers={this.publisherEventHandlers} />
-                            <OTSubscriber ref={component => this._subscriberComponent = component} 
-                            eventHandlers={this.subscriberEventHandlers} subscribeToSelf={true}/>
+                            <OTSubscriber ref={component => this._subscriberComponent = component}
+                                eventHandlers={this.subscriberEventHandlers} subscribeToSelf={true} />
                         </OTSession>
                     </View>
                     <View style={{ alignItems: 'center', fontSize: 30 }}>
