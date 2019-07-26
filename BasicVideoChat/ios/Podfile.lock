@@ -1,5 +1,5 @@
 PODS:
-  - OpenTok (2.15.3)
+  - OpenTok (2.16.1)
 
 DEPENDENCIES:
   - OpenTok
