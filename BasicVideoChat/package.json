@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "opentok-react-native": "^0.10.1",
+    "opentok-react-native": "^0.11.2",
     "react": "16.8.3",
     "react-native": "0.59.5"
   },
