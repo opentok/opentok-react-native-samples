@@ -58,3 +58,8 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
+
+!debug.keystore
+
+# CocoaPods
+/ios/Pods/
