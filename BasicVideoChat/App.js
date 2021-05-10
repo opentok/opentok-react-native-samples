@@ -2,21 +2,24 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import { OTSession, OTPublisher, OTSubscriber } from 'opentok-react-native';
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.apiKey = '';
     this.sessionId = '';
     this.token = '';
-  }
+   }
+   
   render() {
     return (
-      <View style={{ flex: 1, flexDirection: 'row' }}>
+      <View style={{ flex: 1, flexDirection: 'column', paddingHorizontal: 100, paddingVertical: 50 }}>
         <OTSession apiKey={this.apiKey} sessionId={this.sessionId} token={this.token}>
-          <OTPublisher style={{ width: 100, height: 100 }} />
-          <OTSubscriber style={{ width: 100, height: 100 }} />
+          <OTPublisher style={{ width: 200, height: 200 }} />
+          <OTSubscriber style={{ width: 200, height: 200 }} />
         </OTSession>
       </View>
     );
   }
 }
+
+export default App;

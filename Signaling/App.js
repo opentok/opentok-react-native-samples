@@ -2,7 +2,20 @@ import React, { Component } from 'react';
 import { View, Button, TextInput, StyleSheet, FlatList, Text } from 'react-native';
 import { OTSession } from 'opentok-react-native';
 
-export default class App extends Component {
+const styles = StyleSheet.create({
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  },
+  mainText: {
+    fontSize: 20,
+    marginTop: 30,
+    marginBottom: 10,
+  }
+})
+
+class App extends Component {
   constructor(props) {
     super(props);
     this.apiKey = '';
@@ -77,15 +90,4 @@ export default class App extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-  },
-  mainText: {
-    fontSize: 20,
-    marginTop: 30,
-    marginBottom: 10,
-  }
-})
+export default App;
