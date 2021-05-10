@@ -1,11 +1,6 @@
 # OSX
 #
-*.DS_Store
-
-# CocoaPods
-BasicVideoChat/ios/Pods
-Signaling/ios/Pods
-*.xcworkspacedata
+.DS_Store
 
 # Xcode
 #
@@ -34,12 +29,10 @@ build/
 .gradle
 local.properties
 *.iml
-*bin/
-*.project
 
 # node.js
 #
-*node_modules/
+node_modules/
 npm-debug.log
 yarn-error.log
 
@@ -59,5 +52,5 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
-# Config
-/OTNetworkTest/config.json
+# Bundle artifact
+*.jsbundle
