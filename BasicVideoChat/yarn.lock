@@ -3322,6 +3322,11 @@
   "resolved" "https://registry.npmjs.org/flatted/-/flatted-3.2.7.tgz"
   "version" "3.2.7"
 
+"flow-bin@^0.180.0":
+  "integrity" "sha512-3FQcef6z47wbK9OzppOwq6obNRs7weWOABunxMtFwgzC6tLnpA0nkSuVH5KwROHOfIISsSBiuqaDzvtuUQUyVQ=="
+  "resolved" "https://registry.npmjs.org/flow-bin/-/flow-bin-0.180.1.tgz"
+  "version" "0.180.1"
+
 "flow-parser@^0.121.0":
   "integrity" "sha512-1gIBiWJNR0tKUNv8gZuk7l9rVX06OuLzY9AoGio7y/JT4V1IZErEMEq2TJS+PFcw/y0RshZ1J/27VfK1UQzYVg=="
   "resolved" "https://registry.npmjs.org/flow-parser/-/flow-parser-0.121.0.tgz"
@@ -5481,13 +5486,14 @@
   dependencies:
     "is-wsl" "^1.1.0"
 
-"opentok-react-native@^0.20.4":
-  "integrity" "sha512-/gxn8HkOJsIzEdldLCoc6R6GEP8H0+EOHSvfpiXiGciY3NVBqDfx/IlF+ieEU+5KIIve67ZfYBqvCytZvStT6w=="
-  "resolved" "https://registry.npmjs.org/opentok-react-native/-/opentok-react-native-0.20.4.tgz"
-  "version" "0.20.4"
+"opentok-react-native@0.21.1":
+  "integrity" "sha512-Kf73AglXicHmgxXdErG77EQyAtTaTe2htspAXoR/AsmHwrhN/9+71JbV36aOBG4T50qhWBrqyiQ/r0pUB7X2HQ=="
+  "resolved" "https://registry.npmjs.org/opentok-react-native/-/opentok-react-native-0.21.1.tgz"
+  "version" "0.21.1"
   dependencies:
     "axios" "^0.21.1"
     "deprecated-react-native-prop-types" "^2.3.0"
+    "flow-bin" "^0.180.0"
     "prop-types" "^15.7.2"
     "underscore" "^1.13.0"
     "uuid" "^3.4.0"

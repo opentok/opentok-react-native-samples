@@ -76,6 +76,10 @@ PODS:
   - hermes-engine (0.70.2)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
+  - OpenTok (2.21.3)
+  - opentok-react-native (0.20.4):
+    - OpenTok (~> 2.21.3)
+    - React
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -403,6 +407,7 @@ DEPENDENCIES:
   - hermes-engine (from `../node_modules/react-native/sdks/hermes/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
   - OpenSSL-Universal (= 1.1.1100)
+  - opentok-react-native (from `../node_modules/opentok-react-native`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -449,6 +454,7 @@ SPEC REPOS:
     - fmt
     - libevent
     - OpenSSL-Universal
+    - OpenTok
     - SocketRocket
     - YogaKit
 
@@ -465,6 +471,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes/hermes-engine.podspec"
+  opentok-react-native:
+    :path: "../node_modules/opentok-react-native"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -542,6 +550,8 @@ SPEC CHECKSUMS:
   hermes-engine: f9312a2ea8036d03b63568ebf392314f4fa8b474
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
+  OpenTok: 6c553d092fa8d28cf3457a2b3c1e8f7904ee6063
+  opentok-react-native: a7b6a5bb6bac4c5e08e4b5714b6d557238336812
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: d4033a367d0bfd1f23f67b501f8cdabf9afe617e
   RCTTypeSafety: b112b2ccc59309a65284280c0a53baf1ce4b5860
