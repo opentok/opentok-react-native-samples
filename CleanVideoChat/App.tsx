@@ -1,119 +1,48 @@
 /**
- * Sample React Native App
+ * Sample Vonage VideoChat
  * https://github.com/facebook/react-native
  *
- * Generated with the TypeScript template
+ * Generated with the TypeScript template (version 0.70.4)
  * https://github.com/react-native-community/react-native-template-typescript
  *
- * @format
  */
+import {OTPublisher, OTSession, OTSubscriber} from 'opentok-react-native';
+import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 
-import React, {type PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+const apiKey = '47551641';
+const sessionId =
+  '2_MX40NzU1MTY0MX5-MTY2NzIwMTExNTIxMX5pSTZROFFNTHRlN25MWWhXZUV5azhwTjN-UH4';
+const token =
+  'T1==cGFydG5lcl9pZD00NzU1MTY0MSZzaWc9MjNlNjkzZTc0MzkwYmYyMGZmZjcyOWRjNmE2M2QxNTAwYTU3YmJlYjpzZXNzaW9uX2lkPTJfTVg0ME56VTFNVFkwTVg1LU1UWTJOekl3TVRFeE5USXhNWDVwU1RaUk9GRk5USFJsTjI1TVdXaFhaVVY1YXpod1RqTi1VSDQmY3JlYXRlX3RpbWU9MTY2NzIwMTEyMyZub25jZT0wLjEwMTE2NzEyMDEzOTU4MjA3JnJvbGU9cHVibGlzaGVyJmV4cGlyZV90aW1lPTE2NjcyODc1MjMmaW5pdGlhbF9sYXlvdXRfY2xhc3NfbGlzdD0=';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const Section: React.FC<
-  PropsWithChildren<{
-    title: string;
-  }>
-> = ({children, title}) => {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <View style={styles.screen}>
+      <Text>CleanVideoChat</Text>
+      {
+        <OTSession apiKey={apiKey} sessionId={sessionId} token={token}>
+          <OTPublisher style={styles.videoContainer} />
+          <OTSubscriber style={styles.videoContainer} />
+        </OTSession>
+      }
     </View>
   );
 };
 
-const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
-
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  videoContainer: {
+    width: 200,
+    height: 200,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  screen: {
+    flex: 1,
+    flexDirection: 'column',
+    paddingHorizontal: 100,
+    paddingVertical: 50,
+    backgroundColor: 'white',
+    borderColor: 'green',
+    borderWidth: 2,
   },
 });
 

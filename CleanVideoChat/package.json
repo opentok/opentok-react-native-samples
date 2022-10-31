@@ -3,13 +3,24 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "react-native run-android -- --warning-mode all",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "shake": "adb shell input keyevent 82",
+    "doctor": "npx react-native doctor",
+    "kill": "lsof -nti:8081 | xargs kill -9",
+    "clean": "yarn clean_node_modules && yarn clean_android && yarn clean_ios && yarn clean_watchman && yarn clean_cache",
+    "clean_node_modules": "rm -rf node_modules&& yarn",
+    "clean_android": "cd android && ./gradlew clean && cd ..",
+    "clean_ios": "cd ios && rm -rf Pods && cd ..",
+    "clean_watchman": "watchman watch-del-all",
+    "clean_cache": "rm -rf /tmp/metro-*"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.19.4",
+    "opentok-react-native": "^0.21.1",
     "react": "18.1.0",
     "react-native": "0.70.4"
   },
