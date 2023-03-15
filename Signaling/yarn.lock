@@ -5508,10 +5508,10 @@ open@^6.2.0:
   dependencies:
     is-wsl "^1.1.0"
 
-opentok-react-native@^0.21.2:
-  version "0.21.2"
-  resolved "https://registry.npmjs.org/opentok-react-native/-/opentok-react-native-0.21.2.tgz"
-  integrity sha512-pdZcPJR/Ty9gGRje6tr7A7DWeRdLjTx28TToknz5H2OO5/oNbYfHtW5ptK/s6EnsfujHwegjBkWOJmEVSsKCPA==
+opentok-react-native@^0.21.3:
+  version "0.21.3"
+  resolved "https://registry.npmjs.org/opentok-react-native/-/opentok-react-native-0.21.3.tgz"
+  integrity sha512-Iy4wmnZaq7jwggvY3RDqGU9WCT1+RcjQoX/pyTSupIOgHbP148ZzYbBHoftHZQi4bCD4Tdjytb4wRNrHMWLyDw==
   dependencies:
     axios "^0.21.1"
     deprecated-react-native-prop-types "^2.3.0"
