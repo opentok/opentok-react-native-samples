@@ -76,7 +76,7 @@ PODS:
   - hermes-engine (0.70.3)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
-  - opentok-react-native (0.21.1):
+  - opentok-react-native (0.21.4):
     - OTXCFramework (= 2.23.1)
     - React
   - OTXCFramework (2.23.1)
@@ -550,7 +550,7 @@ SPEC CHECKSUMS:
   hermes-engine: bb344d89a0d14c2c91ad357480a79698bb80e186
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  opentok-react-native: 0e954916d8b680aa781417f631bde28c4c03b37f
+  opentok-react-native: 90119a16774dd710eced34a4dd5bff0d37b060ee
   OTXCFramework: 9df455a0080387a409b6e572d24e099c8ddf7a61
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: 5cf7e7d2f12699724b59f90350257a422eaa9492
@@ -585,4 +585,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 02adbe03e8fb71bf7983755750adc594cd1b96d7
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0
