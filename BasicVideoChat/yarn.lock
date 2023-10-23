@@ -5900,10 +5900,9 @@
   dependencies:
     "is-wsl" "^1.1.0"
 
-"opentok-react-native@2.25.0":
-  "integrity" "sha512-1IOucWtD6zYsz9faC4epDDA9D4dNgUCXkxUb72SxnhFQXQCevZUpMKlv29qadLDcJnq/xsPtR+1M03Ow4GMlDw=="
-  "resolved" "https://registry.npmjs.org/opentok-react-native/-/opentok-react-native-2.25.0.tgz"
-  "version" "2.25.0"
+"opentok-react-native@2.26.0":
+  "resolved" "git+ssh://git@github.com/opentok/opentok-react-native.git#05e62c24e9d21d7e988c96ca6895bafd8afa93db"
+  "version" "2.26.0"
   dependencies:
     "axios" "^0.21.1"
     "deprecated-react-native-prop-types" "^2.3.0"
