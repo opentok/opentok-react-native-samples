@@ -1,6 +1,13 @@
-import React, { Component } from 'react';
-import { View, Button, TextInput, StyleSheet, FlatList, Text } from 'react-native';
-import { OTSession } from 'opentok-react-native';
+import React, {Component} from 'react';
+import {
+  View,
+  Button,
+  TextInput,
+  StyleSheet,
+  FlatList,
+  Text,
+} from 'react-native';
+import {OTSession} from 'opentok-react-native';
 
 const styles = StyleSheet.create({
   item: {
@@ -12,8 +19,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginTop: 30,
     marginBottom: 10,
-  }
-})
+  },
+});
 
 class App extends Component {
   constructor(props) {
@@ -30,11 +37,15 @@ class App extends Component {
       messages: [],
     };
     this.sessionEventHandlers = {
-      signal: (event) => {
+      signal: event => {
         if (event.data) {
-          const myConnectionId = this.session.getSessionInfo().connection.connectionId;
+          const myConnectionId =
+            this.session.getSessionInfo().connection.connectionId;
           const oldMessages = this.state.messages;
-          const messages = event.connectionId === myConnectionId ? [...oldMessages, {data: `Me: ${event.data}`}] : [...oldMessages, {data: `Other: ${event.data}`}];
+          const messages =
+            event.connectionId === myConnectionId
+              ? [...oldMessages, {data: `Me: ${event.data}`}]
+              : [...oldMessages, {data: `Other: ${event.data}`}];
           this.setState({
             messages,
           });
@@ -54,30 +65,35 @@ class App extends Component {
     }
   }
   _keyExtractor = (item, index) => index;
-  _renderItem = ({item}) => (
-    <Text style={styles.item}>{item.data}</Text>
-  );
+  _renderItem = ({item}) => <Text style={styles.item}>{item.data}</Text>;
   render() {
     return (
-      <View style={{ flex: 1 }}>
-        <Text style={styles.mainText}> OpenTok React Native Signaling Sample</Text>
-        <OTSession 
+      <View style={{flex: 1}}>
+        <Text style={styles.mainText}>
+          {' '}
+          OpenTok React Native Signaling Sample
+        </Text>
+        <OTSession
           apiKey={this.apiKey}
           sessionId={this.sessionId}
           token={this.token}
           signal={this.state.signal}
           eventHandlers={this.sessionEventHandlers}
-          ref={(instance) => {
+          ref={instance => {
             this.session = instance;
           }}
         />
         <TextInput
           style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-          onChangeText={(text) => { this.setState({ text }); }}
+          onChangeText={text => {
+            this.setState({text});
+          }}
           value={this.state.text}
         />
         <Button
-          onPress={() => { this.sendSignal(); }}
+          onPress={() => {
+            this.sendSignal();
+          }}
           title="Send Signal"
         />
         <FlatList
