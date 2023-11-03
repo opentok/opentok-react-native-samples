@@ -13,6 +13,10 @@ in a React Native application._
 
 ### In this repo, you'll find:
 
+- [Archiving](https://github.com/opentok/opentok-react-native-samples/tree/master/Archiving):
+
+  - This sample application shows how to display and hide an archiving indicator when archiving for the session starts and stops. Note that you start and stop archiving using the OpenTok REST API or the OpenTok server SDKs. See the OpenTok [Archiving](https://tokbox.com/developer/guides/archiving) developer guide.
+
 - [Basic Video Chat](https://github.com/opentok/opentok-react-native-samples/tree/master/BasicVideoChat):
 
   - This sample application shows how to connect to an OpenTok session,
@@ -44,7 +48,9 @@ in a React Native application._
 
 2. In your terminal, change your directory to the sample project you want:
 
-- `cd BasicVideoChat/` or `cd Signaling/`
+- `cd Archiving/`
+- `cd BasicVideoChat/`
+- `cd Signaling/`
 
 3. Install the required node modules: `npm install`
 
