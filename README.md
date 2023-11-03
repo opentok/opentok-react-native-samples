@@ -26,6 +26,10 @@ in a React Native application._
 - [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
   - This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
 
+- [ScreenSharing](https://github.com/opentok/opentok-react-native-samples/tree/master/Archiving):
+
+  - This sample application shows how to toggle between publishing a screen-sharing stream and a camera feed stream. Note that the screen-sharing stream shares the entire contents of the screen, so the local publisher and subscriber views are hidden (`{width: 0, height: 0}`) when publishing the screen-sharing stream (so they don't appear in the published stream).
+
 ## Pre-Requisites
 
 1. Install [node.js](https://nodejs.org/)
@@ -51,6 +55,7 @@ in a React Native application._
 - `cd Archiving/`
 - `cd BasicVideoChat/`
 - `cd Signaling/`
+- `cd ScreenSharing/`
 
 3. Install the required node modules: `npm install`
 
