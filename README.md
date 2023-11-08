@@ -23,6 +23,10 @@ in a React Native application._
   publish a stream, and subscribe to multiple streams for both iOS and
   Android using the OpenTok React Native API.
 
+- [Multiparty](https://github.com/opentok/opentok-react-native-samples/tree/master/Multiparty):
+
+  This sample application shows how to add UI elements to arrange videos and to toggle the mic and camera in multiparty calls.
+
 - [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
 
   This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
@@ -55,6 +59,7 @@ in a React Native application._
 
 - `cd Archiving/`
 - `cd BasicVideoChat/`
+- `cd Multiparty/`
 - `cd Signaling/`
 - `cd ScreenSharing/`
 
