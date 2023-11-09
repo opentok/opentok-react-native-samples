@@ -25,7 +25,7 @@ in a React Native application._
 
 - [Multiparty](https://github.com/opentok/opentok-react-native-samples/tree/master/Multiparty):
 
-  This sample application shows how to add UI elements to arrange videos and to toggle the mic and camera in multiparty calls.
+  This sample application shows how to arrange videos and to toggle the mic and camera in multiparty calls.
 
 - [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
 

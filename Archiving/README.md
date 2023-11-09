@@ -23,16 +23,16 @@ The App.js file includes all of the code that uses the OpenTok React Native SDK.
 The `this.sessionEventHandlers` property includes `archiveStarted` and `archiveStopped` properties. These are set to functions that are called when the archive starts and stops for the session.
 
 ```js
-    this.sessionEventHandlers = {
-      archiveStarted: event => {
-        this.setState({showRecIndicator: true});
-        console.log('Archive started -- archive ID:', event.archiveId);
-      },
-      archiveStopped: event => {
-        this.setState({showRecIndicator: false});
-        console.log('Archive stoped -- archive ID:', event.archiveId);
-      },
-    };
+this.sessionEventHandlers = {
+  archiveStarted: event => {
+    this.setState({showRecIndicator: true});
+    console.log('Archive started -- archive ID:', event.archiveId);
+  },
+  archiveStopped: event => {
+    this.setState({showRecIndicator: false});
+    console.log('Archive stoped -- archive ID:', event.archiveId);
+  },
+};
 ```
 
 The app uses a `showRecIndicator` state property to track whether to show the "Recording" indicator in the publisher (based on whether the session is being archived).
