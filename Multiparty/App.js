@@ -78,9 +78,7 @@ class App extends Component {
       },
     };
 
-    this.publisherProperties = {
-      cameraPosition: 'front',
-    };
+    this.publisherProperties = {};
   }
 
   toggleAudio = () => {
