@@ -35,6 +35,8 @@ in a React Native application._
 
   This sample application shows how to toggle between publishing a screen-sharing stream and a camera feed stream. Note that the screen-sharing stream shares the entire contents of the screen, so the local publisher and subscriber views are hidden (`{width: 0, height: 0}`) when publishing the screen-sharing stream (so they don't appear in the published stream).
 
+For details on each sample, see the README.md file in each sample directory.
+
 ## Pre-Requisites
 
 1. Install [node.js](https://nodejs.org/)
