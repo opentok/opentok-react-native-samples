@@ -18,7 +18,7 @@ For testing, you can use the [OpenTok playground](https://tokbox.com/developer/t
 
 The App.js file includes all of the code that uses the OpenTok React Native SDK.
 
-The app uses a `shareScreen` state property to track whether to publish a screen-sharing stream or a camera (non-sharing stream). The `shareScreen` when the user clicking the 
+The app uses a Boolean `shareScreen` state property to track whether to publish a screen-sharing stream or a camera (non-sharing stream). When the user clicks the "Toggle screen sharing" button, the state changes.
 
 The `OTPublisher` component includes an `properties` object. The `videoSource` property of this object is set (based on the `shareScreen` state property). This determines whether the publisher publishes a screen-sharing or camera-based stream:
 
