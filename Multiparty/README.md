@@ -173,7 +173,6 @@ Finally, if there is *more than one user*, the app shows the primary subscriber 
 Since the number of subscribers could grow and challenge the device CPU and network bandwidth, the app implements optimizations on each of the subscribers, such as lowering the resolution and disabling the video for the subscribers that are not visible.
 
 To have control over each subscriber, the app implements a render function for the subscribers (see [custom rendering of streams](https://github.com/opentok/opentok-react-native/blob/master/docs/OTSubscriber.md#custom-rendering-of-streams).
-
 The app uses React's conditional rendering (https://reactjs.org/docs/conditional-rendering.html) to handle the different cases with zero, one or N subscribers.
 
 When there is more than one subscriber, the `renderSubscribers()` adds
