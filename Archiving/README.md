@@ -37,7 +37,7 @@ this.sessionEventHandlers = {
 
 The app uses a `showRecIndicator` state property to track whether to show the "Recording" indicator in the publisher (based on whether the session is being archived).
 
-The `OTSession` object dispatches the `archiveStarted` and `archiveStopped` events.The `eventHandlers` property of the `OTSession` object is set to the event handlers object:
+The `OTSession` object dispatches the `archiveStarted` and `archiveStopped` events. The `eventHandlers` property of the `OTSession` object is set to the event handlers object:
 
 ```jsx
 <OTSession

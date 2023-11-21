@@ -36,6 +36,6 @@ This application shows the simplest way to publish and subscribe to audio-video 
 </OTSession>
 ```
 
-The `OTSession` component connect to the specified OpenTok session. Upon connecting to the session, it publishes a stream to the session and subscribes to streams published by other clients connected to the session. The `OTSession` component includes a React Native `View` that automatically lays out the publisher and subscriber views in a grid.
+The `OTSession` component connects to the specified OpenTok session. Upon connecting to the session, it publishes a stream to the session and subscribes to streams published by other clients connected to the session. The `OTSession` component includes a React Native `View` that automatically lays out the publisher and subscriber views in a grid.
 
 Check out the OpenTok documentation at <https://tokbox.com/developer/>

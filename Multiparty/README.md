@@ -1,6 +1,6 @@
 # Multiparty sample
 
-This sample application shows how to arrange videos and to toggle the mic and camera in multiparty calls using OpenTok React Native SDK.
+This sample application shows how to arrange videos and to toggle the microphone and camera in multiparty calls using OpenTok React Native SDK.
 
 The app builds upon the Basic Video Chat sample app.
 
@@ -12,7 +12,7 @@ The app builds upon the Basic Video Chat sample app.
 
 3. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
 
-For testing, you can use the [OpenTok playground](https://tokbox.com/developer/tools/playground/) to create sessions, publish streams to the session from a web client, and view the stream published from the client using the OpenTok React Native SDK. Open the playground in multiple tabs to publish multiple streams to the session (from the browser). And mute the computer's speaker to prevent audio feedback
+For testing, you can use the [OpenTok playground](https://tokbox.com/developer/tools/playground/) to create sessions, publish streams to the session from a web client, and view the stream published from the client using the OpenTok React Native SDK. Open the playground in multiple tabs to publish multiple streams to the session (from the browser). And mute the computer's speaker to prevent audio feedback.
 
 ## Understanding the code
 
@@ -120,7 +120,7 @@ Using the React State, the app triggers changes to the Publisher instance by upd
 The "End Call" button has a very similar approach. The `endCall` function toggles the `joinCall` value of the state and resets the View to the initial one.
 
 ```jsx
-toggleAudio = () => {
+  toggleAudio = () => {
     let publishAudio = this.state.localPublishAudio;
     this.publisherProperties = { ...this.publisherProperties, publishAudio: !publishAudio };
     this.setState({
@@ -168,16 +168,15 @@ If there are *no streams*, the app displays a simple informative text.
 
 If there is only *one subscriber*, the app displays their stream in full-screen mode.
 
-Finally, there are *more than one user*, the app shows the primary subscriber in the big View and the others in a `ScrollView` component to handle multiple subscribers.
+Finally, if there is *more than one user*, the app shows the primary subscriber in the big View and the others in a `ScrollView` component to handle multiple subscribers.
 
 Since the number of subscribers could grow and challenge the device CPU and network bandwidth, the app implements optimizations on each of the subscribers, such as lowering the resolution and disabling the video for the subscribers that are not visible.
 
 To have control over each subscriber, the app implements a render function for the subscribers (see [custom rendering of streams](https://github.com/opentok/opentok-react-native/blob/master/docs/OTSubscriber.md#custom-rendering-of-streams).
 
-
 The app uses React's conditional rendering (https://reactjs.org/docs/conditional-rendering.html) to handle the different cases with zero, one or N subscribers.
 
-When there are more than one subscriber, the `renderSubscribers()` adds
+When there is more than one subscriber, the `renderSubscribers()` adds
 a main subscriber view and a `ScrollView` component in which it feeds the other subscribers. The first step is to check if we have a `mainSubscriberStreamId`. If so, the app sorts the array to have the primary subscriber as the first element. The remaining subscribers will be displayed in the `ScrollView` horizontally. The `ScrollView` component is ideal for our use case, as we can show a relatively high number of subscribers without the need to change the layout, and we can detect how many subscribers are in the scroll view and how many of them are *visible*.
 
 ```jsx
@@ -229,9 +228,9 @@ a main subscriber view and a `ScrollView` component in which it feeds the other 
 </>
 ```
 
-Group calls on mobile devices could be very challenging, both from the hardware and network point of view. To deliver a good result to the end-user, an App should implement a list of best practices to handle different use cases and layout. In our case, we have a main subscriber view which needs to have the best resolution possible, and the `ScrollView` component with the remaining subscribers in smaller thumbnails that could be optimized by lowering the received resolution. The app sets the preferred resolution for each subscriber using the `preferredResolution` property of the `streamProperties` propety of the `OTSubscriber` objects. 
+Group calls on mobile devices can be very challenging, both from the hardware and network point of view. To deliver a good result to the end-user, an App should implement a list of best practices to handle different use cases and layout. In our case, we have a main subscriber view which needs to have the best resolution possible, and the `ScrollView` component with the remaining subscribers in smaller thumbnails that could be optimized by lowering the received resolution. The app sets the preferred resolution for each subscriber using the `preferredResolution` property of the `streamProperties` propety of the `OTSubscriber` objects. 
 
-We implement the `handleSubscriberSelection` method to handle the mainSubscriber View and the preferred resolution. The function is on the `TouchableOpacity` component parent of each of the subscribers.
+We implement the `handleSubscriberSelection()` method to handle the `mainSubscriber` View and the preferred resolution. The function is on the `TouchableOpacity` component parent of each of the subscribers.
 
 ```jsx
 const mainSubscribersResolution = { width: 1280, height: 720 };
