@@ -13,14 +13,29 @@ in a React Native application._
 
 ### In this repo, you'll find:
 
+- [Archiving](https://github.com/opentok/opentok-react-native-samples/tree/master/Archiving):
+
+  This sample application shows how to display and hide an archiving indicator when archiving for the session starts and stops. Note that you start and stop archiving using the OpenTok REST API or the OpenTok server SDKs. See the OpenTok [Archiving](https://tokbox.com/developer/guides/archiving) developer guide.
+
 - [Basic Video Chat](https://github.com/opentok/opentok-react-native-samples/tree/master/BasicVideoChat):
 
-  - This sample application shows how to connect to an OpenTok session,
-    publish a stream, and subscribe to multiple streams for both iOS and
-    Android using the OpenTok React Native API.
+  This sample application shows how to connect to an OpenTok session,
+  publish a stream, and subscribe to multiple streams for both iOS and
+  Android using the OpenTok React Native API.
+
+- [Multiparty](https://github.com/opentok/opentok-react-native-samples/tree/master/Multiparty):
+
+  This sample application shows how to arrange videos and to toggle the mic and camera in multiparty calls.
 
 - [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
-  - This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
+
+  This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
+
+- [ScreenSharing](https://github.com/opentok/opentok-react-native-samples/tree/master/Archiving):
+
+  This sample application shows how to toggle between publishing a screen-sharing stream and a camera feed stream. Note that the screen-sharing stream shares the entire contents of the screen, so the local publisher and subscriber views are hidden (`{width: 0, height: 0}`) when publishing the screen-sharing stream (so they don't appear in the published stream).
+
+For details on each sample, see the README.md file in each sample directory.
 
 ## Pre-Requisites
 
@@ -44,13 +59,17 @@ in a React Native application._
 
 2. In your terminal, change your directory to the sample project you want:
 
-- `cd BasicVideoChat/` or `cd Signaling/`
+- `cd Archiving/`
+- `cd BasicVideoChat/`
+- `cd Multiparty/`
+- `cd Signaling/`
+- `cd ScreenSharing/`
 
 3. Install the required node modules: `npm install`
 
-### For iOS
+4. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
 
-- Install the Podfile's dependencies: `cd ios/ && pod install`
+5. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
 
 ## Development and Contributing
 
