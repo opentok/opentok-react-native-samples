@@ -260,8 +260,7 @@ class App extends Component {
             apiKey={this.apiKey}
             sessionId={this.sessionId}
             token={this.token}
-            eventHandlers={this.sessionEventHandlers}
-            options={{enableStereoOutput: true}}>
+            eventHandlers={this.sessionEventHandlers}>
             <OTPublisher
               properties={this.publisherProperties}
               style={styles.publisherStyle}
