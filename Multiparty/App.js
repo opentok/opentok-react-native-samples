@@ -260,6 +260,9 @@ class App extends Component {
             apiKey={this.apiKey}
             sessionId={this.sessionId}
             token={this.token}
+            options={{
+              androidOnTop: 'publisher',
+            }}
             eventHandlers={this.sessionEventHandlers}>
             <OTPublisher
               properties={this.publisherProperties}
