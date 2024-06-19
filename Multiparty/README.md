@@ -111,6 +111,8 @@ On the other hand, when the `OTSession` object dispatches a `streamDestroyed` ev
 
 The `videoView()` function (called by the `render()` function) adds the `OTSession`, `OTPublisher` and `OTSubscriber` components to the main view. The `OTSession` includes the credentials and the `eventHandler` function as props of the component.
 
+Note that the `androidOnTop` option of the OTSession component is set to `'publisher'`. This keeps the publisher video on top in Android.
+
 ### Building the toolbar
 
 The `this.publisherProperties` is passed in as the `properties` property of the `OTPublisher` component. Initially, the `publisherProperties` object has no properties set -- the app publishes with the default settings (such as publishing both audio and video).
