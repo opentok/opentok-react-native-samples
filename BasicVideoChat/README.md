@@ -28,11 +28,11 @@ This application shows the simplest way to publish and subscribe to audio-video 
 
 ```jsx
 <OTSession
-  apiKey={this.apiKey}
-  sessionId={this.sessionId}
-  token={this.token}>
-  <OTPublisher style={{width: 200, height: 200}} />
-  <OTSubscriber style={{width: 200, height: 200}} />
+   apiKey={apiKey}
+   sessionId={sessionId}
+   token={token}>
+   <OTPublisher style={styles.pubSub}/>
+   <OTSubscriber style={styles.pubSub} />
 </OTSession>
 ```
 
