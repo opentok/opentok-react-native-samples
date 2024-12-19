@@ -17,6 +17,10 @@ in a React Native application._
 
   This sample application shows how to display and hide an archiving indicator when archiving for the session starts and stops. Note that you start and stop archiving using the OpenTok REST API or the OpenTok server SDKs. See the OpenTok [Archiving](https://tokbox.com/developer/guides/archiving) developer guide.
 
+- [BackgroundBlur](https://github.com/opentok/opentok-react-native-samples/tree/master/BackgroundBlur):
+
+  This sample application shows how to use the Vonage Media Library to apply a background blur to a published video stream.
+
 - [Basic Video Chat](https://github.com/opentok/opentok-react-native-samples/tree/master/BasicVideoChat):
 
   This sample application shows how to connect to an OpenTok session,
@@ -60,6 +64,7 @@ For details on each sample, see the README.md file in each sample directory.
 2. In your terminal, change your directory to the sample project you want:
 
 - `cd Archiving/`
+- `cd BackgroundBlur/`
 - `cd BasicVideoChat/`
 - `cd Multiparty/`
 - `cd Signaling/`
