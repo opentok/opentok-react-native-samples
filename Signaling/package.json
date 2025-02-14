@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "opentok-react-native": "^2.28.0",
+    "opentok-react-native": "^2.29.0",
     "react": "18.2.0",
-    "react-native": "0.71.9"
+    "react-native": "0.71.19"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
