@@ -15,10 +15,10 @@ PODS:
     - hermes-engine/Pre-built (= 0.71.19)
   - hermes-engine/Pre-built (0.71.19)
   - libevent (2.1.12)
-  - opentok-react-native (2.29.0):
-    - OTXCFramework (= 2.29.0)
+  - opentok-react-native (2.29.1):
+    - OTXCFramework (= 2.29.1)
     - React
-  - OTXCFramework (2.29.0)
+  - OTXCFramework (2.29.1)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion

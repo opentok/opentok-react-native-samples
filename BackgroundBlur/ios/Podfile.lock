@@ -7,10 +7,10 @@ PODS:
   - hermes-engine (0.76.5):
     - hermes-engine/Pre-built (= 0.76.5)
   - hermes-engine/Pre-built (0.76.5)
-  - opentok-react-native (2.29.0):
-    - OTXCFramework (= 2.29.0)
+  - opentok-react-native (2.29.1):
+    - OTXCFramework (= 2.29.1)
     - React
-  - OTXCFramework (2.29.0)
+  - OTXCFramework (2.29.1)
   - RCT-Folly (2024.01.01.00):
     - boost
     - DoubleConversion
@@ -1514,7 +1514,7 @@ PODS:
     - React-perflogger (= 0.76.5)
     - React-utils (= 0.76.5)
   - SocketRocket (0.7.1)
-  - VonageClientSDKVideoTransformers (2.29.0)
+  - VonageClientSDKVideoTransformers (2.29.1)
   - Yoga (0.0.0)
 
 DEPENDENCIES:
