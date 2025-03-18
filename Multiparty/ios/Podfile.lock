@@ -15,10 +15,10 @@ PODS:
     - hermes-engine/Pre-built (= 0.71.19)
   - hermes-engine/Pre-built (0.71.19)
   - libevent (2.1.12)
-  - opentok-react-native (2.29.0):
-    - OTXCFramework (= 2.29.0)
+  - opentok-react-native (2.29.1):
+    - OTXCFramework (= 2.29.1)
     - React
-  - OTXCFramework (2.29.0)
+  - OTXCFramework (2.29.1)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -482,8 +482,8 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 1468b458e81705fcd55ed6e29c32ff069f04b69c
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  opentok-react-native: 1ffd63f16e1852697197c44b020236f6986b670a
-  OTXCFramework: 7309c7394ca859a61ec68abd3748b0765c11625e
+  opentok-react-native: aafb893cddf073feba083a1d93dd014f1364007d
+  OTXCFramework: 5cb2c2c34044288a89dc1890f16d8d27144e974b
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: 79b5f823c2b4b865451ba9ddb33c676786760ea8
   RCTTypeSafety: 4f6d5414413d8848923ccd448c4cef4b6ffcd403
