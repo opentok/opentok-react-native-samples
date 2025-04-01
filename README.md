@@ -2,8 +2,7 @@
 
 <img src="https://assets.tokbox.com/img/vonage/Vonage_VideoAPI_black.svg" height="48px" alt="Tokbox is now known as Vonage" />
 
-_These samples demonstrate how to use opentok-react-native to do video-calling
-in a React Native application._
+_These samples demonstrate how to use @vonage/client-sdk-video-react-native  to do video-calling in a React Native application._
 
 ## Contents
 
@@ -13,29 +12,29 @@ in a React Native application._
 
 ### In this repo, you'll find:
 
-- [Archiving](https://github.com/opentok/opentok-react-native-samples/tree/master/Archiving):
+- [Archiving](https://github.com/Vonage/vonage-video-react-native-sdk-samples/tree/master/Archiving):
 
   This sample application shows how to display and hide an archiving indicator when archiving for the session starts and stops. Note that you start and stop archiving using the OpenTok REST API or the OpenTok server SDKs. See the OpenTok [Archiving](https://tokbox.com/developer/guides/archiving) developer guide.
 
-- [BackgroundBlur](https://github.com/opentok/opentok-react-native-samples/tree/master/BackgroundBlur):
+- [BackgroundBlur](https://github.com/Vonage/vonage-video-react-native-sdk-samples/tree/master/BackgroundBlur):
 
   This sample application shows how to use the Vonage Media Library to apply a background blur to a published video stream.
 
-- [Basic Video Chat](https://github.com/opentok/opentok-react-native-samples/tree/master/BasicVideoChat):
+- [Basic Video Chat](https://github.com/Vonage/vonage-video-react-native-sdk-samples/tree/master/BasicVideoChat):
 
   This sample application shows how to connect to an OpenTok session,
   publish a stream, and subscribe to multiple streams for both iOS and
   Android using the OpenTok React Native API.
 
-- [Multiparty](https://github.com/opentok/opentok-react-native-samples/tree/master/Multiparty):
+- [Multiparty](https://github.com/Vonage/vonage-video-react-native-sdk-samples/tree/master/Multiparty):
 
   This sample application shows how to arrange videos and to toggle the mic and camera in multiparty calls.
 
-- [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
+- [Signaling](https://github.com/Vonage/vonage-video-react-native-sdk-samples/tree/master/Signaling):
 
   This sample application shows how to connect to an OpenTok session and implement OpenTok Signaling to create a text chat for both iOS and Android using the OpenTok React Native API.
 
-- [ScreenSharing](https://github.com/opentok/opentok-react-native-samples/tree/master/Archiving):
+- [ScreenSharing](https://github.com/Vonage/vonage-video-react-native-sdk-samples/tree/master/Archiving):
 
   This sample application shows how to toggle between publishing a screen-sharing stream and a camera feed stream. Note that the screen-sharing stream shares the entire contents of the screen, so the local publisher and subscriber views are hidden (`{width: 0, height: 0}`) when publishing the screen-sharing stream (so they don't appear in the published stream).
 
@@ -74,7 +73,7 @@ For details on each sample, see the README.md file in each sample directory.
 
 4. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
 
-5. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+5. In the App.js file, set the `applicationId`, `sessionId`, and `token` properties to your Vonage Video application ID, a Vonage Video session ID, and a token for that session.
 
 ## Development and Contributing
 
