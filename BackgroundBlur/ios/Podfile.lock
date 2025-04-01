@@ -1,5 +1,8 @@
 PODS:
   - boost (1.84.0)
+  - client-sdk-video-react-native (2.29.1):
+    - React
+    - VonageClientSDKVideo (= 2.29.1)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.76.5)
   - fmt (9.1.0)
@@ -7,10 +10,6 @@ PODS:
   - hermes-engine (0.76.5):
     - hermes-engine/Pre-built (= 0.76.5)
   - hermes-engine/Pre-built (0.76.5)
-  - opentok-react-native (2.29.1):
-    - OTXCFramework (= 2.29.1)
-    - React
-  - OTXCFramework (2.29.1)
   - RCT-Folly (2024.01.01.00):
     - boost
     - DoubleConversion
@@ -1514,17 +1513,18 @@ PODS:
     - React-perflogger (= 0.76.5)
     - React-utils (= 0.76.5)
   - SocketRocket (0.7.1)
+  - VonageClientSDKVideo (2.29.1)
   - VonageClientSDKVideoTransformers (2.29.1)
   - Yoga (0.0.0)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - "client-sdk-video-react-native (from `../node_modules/@vonage/client-sdk-video-react-native`)"
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
-  - opentok-react-native (from `../node_modules/opentok-react-native`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTDeprecation (from `../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`)
@@ -1588,13 +1588,15 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - OTXCFramework
     - SocketRocket
+    - VonageClientSDKVideo
     - VonageClientSDKVideoTransformers
 
 EXTERNAL SOURCES:
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
+  client-sdk-video-react-native:
+    :path: "../node_modules/@vonage/client-sdk-video-react-native"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -1606,8 +1608,6 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2024-11-12-RNv0.76.2-5b4aa20c719830dcf5684832b89a6edb95ac3d64
-  opentok-react-native:
-    :path: "../node_modules/opentok-react-native"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTDeprecation:
@@ -1725,13 +1725,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
+  client-sdk-video-react-native: 2e676ec8a5afbbd1a02dd941b7a293812aacb1fd
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   FBLazyVector: 1bf99bb46c6af9a2712592e707347315f23947aa
   fmt: 10c6e61f4be25dc963c36bd73fc7b1705fe975be
   glog: 08b301085f15bcbb6ff8632a8ebaf239aae04e6a
   hermes-engine: 06a9c6900587420b90accc394199527c64259db4
-  opentok-react-native: fd7f8e72ca52f7c1552c3a3ad52a7376ed53d756
-  OTXCFramework: 5cb2c2c34044288a89dc1890f16d8d27144e974b
   RCT-Folly: 84578c8756030547307e4572ab1947de1685c599
   RCTDeprecation: fb7d408617e25d7f537940000d766d60149c5fea
   RCTRequired: 9aaf0ffcc1f41f0c671af863970ef25c422a9920
@@ -1789,6 +1788,7 @@ SPEC CHECKSUMS:
   ReactCodegen: 3a68408bf68d0957abcd13d610f76420005c1d91
   ReactCommon: 5809a8ee421b7219221a475b78180f8f34b5c5ec
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
+  VonageClientSDKVideo: d74428e330bd0c903f8055a1e47abeeed35bc078
   VonageClientSDKVideoTransformers: b2a6dda90ba9b100d528e9989728f18ddd26516b
   Yoga: c7ea4c36c1d78ebbf45529b6e78283e4e0fe4956
 
