@@ -10,7 +10,7 @@ The app builds upon the Basic Video Chat sample app.
 
 2. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
 
-3. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+3. In the App.js file, set the `applicationId`, `sessionId`, and `token` properties to your Vonage Video application ID, a Vonage Video session ID, and a token for that session.
 
 For testing, you can use the [OpenTok playground](https://tokbox.com/developer/tools/playground/) to create sessions, publish streams to the session from a web client, and view the stream published from the client using the OpenTok React Native SDK. Open the playground in multiple tabs to publish multiple streams to the session (from the browser). And mute the computer's speaker to prevent audio feedback.
 
@@ -26,7 +26,7 @@ The `joinCall` property of the React state triggers different views. When the Ap
 
 ## The video chat interface
 
-The app includes event handlers for events dispatched by the `OTSession` object, such as the `sessionConnected`, `sessionDisconnected`, `streamCreated`, and `streamDestroyed` events. (See the docs for these events: [Session Events](https://github.com/opentok/opentok-react-native/blob/develop/docs/OTSession.md#events)).
+The app includes event handlers for events dispatched by the `OTSession` object, such as the `sessionConnected`, `sessionDisconnected`, `streamCreated`, and `streamDestroyed` events. (See the docs for these events: [Session Events](https://vonage.github.io/video-docs/video-react-native-reference/latest/OTSession.html#events)).
 
 The video call view is composed of the following components:
 
@@ -43,17 +43,17 @@ To add video streams to the interface, the React State keeps track of the subscr
 ```jsx
 constructor(props) {
   super(props);
-  this.apiKey = credentials.API_KEY;
-  this.sessionId = credentials.SESSION_ID;
-  this.token = credentials.TOKEN;
+  this.applicationId = '';
+  this.sessionId = '';
+  this.token = '';
   this.state = {
     subscriberIds: [],
     localPublishAudio: true,
     localPublishVideo: true,
     joinCall: false,
     streamProperties: {},
-    mainSubscriberStreamId: null
-  }; 
+    mainSubscriberStreamId: null,
+  };
 }
   
 this.sessionEventHandlers = {
@@ -90,7 +90,7 @@ On the other hand, when the `OTSession` object dispatches a `streamDestroyed` ev
 ```jsx
 <View style={styles.fullView}>
   <OTSession
-    apiKey={this.apiKey}
+    applicationId={this.applicationId}
     sessionId={this.sessionId}
     token={this.token}
     eventHandlers={this.sessionEventHandlers}>
@@ -174,7 +174,7 @@ Finally, if there is *more than one user*, the app shows the primary subscriber 
 
 Since the number of subscribers could grow and challenge the device CPU and network bandwidth, the app implements optimizations on each of the subscribers, such as lowering the resolution and disabling the video for the subscribers that are not visible.
 
-To have control over each subscriber, the app implements a render function for the subscribers (see [custom rendering of streams](https://github.com/opentok/opentok-react-native/blob/master/docs/OTSubscriber.md#custom-rendering-of-streams).
+To have control over each subscriber, the app implements a render function for the subscribers (see [custom rendering of streams](https://developer.vonage.com/en/video/guides/subscribe-streams/managing-streams-react-native#custom-rendering-of-subscribers).
 The app uses React's conditional rendering (https://reactjs.org/docs/conditional-rendering.html) to handle the different cases with zero, one or N subscribers.
 
 When there is more than one subscriber, the `renderSubscribers()` adds

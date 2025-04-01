@@ -10,7 +10,7 @@ The app builds upon the Basic Video Chat sample app.
 
 2. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
 
-3. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+3. In the App.js file, set the `applicationId`, `sessionId`, and `token` properties to your Vonage Video application ID, a Vonage Video session ID, and a token for that session.
 
 For testing, you can use the [OpenTok playground](https://tokbox.com/developer/tools/playground/) to create sessions, send signals, and view signals send by the client using the OpenTok React Native SDK.
 
@@ -55,7 +55,7 @@ The `OTSession` object dispatches the `session` events.The `eventHandlers` prope
 
 ```jsx
 <OTSession
-  apiKey={this.apiKey}
+  applicationId={this.applicationId}
   sessionId={this.sessionId}
   token={this.token}
   eventHandlers={this.sessionEventHandlers}>
@@ -84,7 +84,7 @@ The `signal` property of the `OTSession` component sends a signal when the value
 
 ```jsx
 <OTSession
-  apiKey={this.apiKey}
+  applicationId={this.applicationId}
   sessionId={this.sessionId}
   token={this.token}
   signal={this.state.signal}

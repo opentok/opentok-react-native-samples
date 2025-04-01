@@ -15,7 +15,7 @@ import {
   OTPublisher,
   OTSubscriber,
   OTSubscriberView,
-} from 'opentok-react-native';
+} from '@vonage/client-sdk-video-react-native';
 
 const dimensions = {
   width: Dimensions.get('window').width,
@@ -28,7 +28,7 @@ const secondarySubscribersResolution = {width: 352, height: 288};
 class App extends Component {
   constructor(props) {
     super(props);
-    this.apiKey = '';
+    this.applicationId = '';
     this.sessionId = '';
     this.token = '';
     this.state = {
@@ -257,7 +257,7 @@ class App extends Component {
       <>
         <View style={styles.fullView}>
           <OTSession
-            apiKey={this.apiKey}
+            applicationId={this.applicationId}
             sessionId={this.sessionId}
             token={this.token}
             options={{

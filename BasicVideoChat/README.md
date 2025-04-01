@@ -8,7 +8,7 @@ This sample application shows how to connect to an OpenTok session, publish a st
 
 2. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
 
-3. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+3. In the App.js file, set the `applicationId`, `sessionId`, and `token` properties to your Vonage Video application ID, a Vonage Video session ID, and a token for that session.
 
 For testing, you can use the [OpenTok playground](https://tokbox.com/developer/tools/playground/) to create sessions, publish streams from a web client, and subscribe to streams published from the client using the OpenTok React Native SDK.
 
@@ -19,16 +19,16 @@ The App.js file includes all of the code that uses the OpenTok React Native SDK.
 The app imports `OTSession`, `OTPublisher`, and `OTSubscriber` from the SDK.
 
 ```js
-import {OTSession, OTPublisher, OTSubscriber} from 'opentok-react-native';
+import {OTSession, OTPublisher, OTSubscriber} from '@vonage/client-sdk-video-react-native';
 ```
 
-Documentation for these components are at <https://github.com/opentok/opentok-react-native/blob/develop/docs/index.md>.
+Documentation for these components are at <https://vonage.github.io/video-docs/video-react-native-reference/latest>.
 
-This application shows the simplest way to publish and subscribe to audio-video streams in an OpenTok session. Simply add the  `apiKey`, `sessionId`, and `token` attributes to an `OTSession` component and add `OTPublisher` and `OTSubscriber` components as children of the  `OTSession` component:
+This application shows the simplest way to publish and subscribe to audio-video streams in an OpenTok session. Simply add the  `applicationId`, `sessionId`, and `token` attributes to an `OTSession` component and add `OTPublisher` and `OTSubscriber` components as children of the  `OTSession` component:
 
 ```jsx
 <OTSession
-  apiKey={this.apiKey}
+  applicationId={this.applicationId}
   sessionId={this.sessionId}
   token={this.token}>
   <OTPublisher style={{width: 200, height: 200}} />

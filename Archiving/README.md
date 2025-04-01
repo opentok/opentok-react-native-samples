@@ -10,7 +10,7 @@ The app builds upon the Basic Video Chat sample app.
 
 2. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
 
-3. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+3. In the App.js file, set the `applicationId`, `sessionId`, and `token` properties to your Vonage Video application ID, a Vonage Video session ID, and a token for that session.
 
 You will need to start and stop archiving using one of the OpenTok server SDKs or the OpenTok REST API. See the [OpenTok Archiving developer guide](https://tokbox.com/developer/guides/archiving).
 
@@ -41,7 +41,7 @@ The `OTSession` object dispatches the `archiveStarted` and `archiveStopped` even
 
 ```jsx
 <OTSession
-  apiKey={this.apiKey}
+  applicationId={this.applicationId}
   sessionId={this.sessionId}
   token={this.token}
   eventHandlers={this.sessionEventHandlers}>

@@ -7,7 +7,7 @@ import {
   FlatList,
   Text,
 } from 'react-native';
-import {OTSession} from 'opentok-react-native';
+import {OTSession} from '@vonage/client-sdk-video-react-native';
 
 const styles = StyleSheet.create({
   item: {
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 class App extends Component {
   constructor(props) {
     super(props);
-    this.apiKey = '';
+    this.applicationId = '';
     this.sessionId = '';
     this.token = '';
     this.state = {
@@ -74,7 +74,7 @@ class App extends Component {
           OpenTok React Native Signaling Sample
         </Text>
         <OTSession
-          apiKey={this.apiKey}
+          applicationId={this.applicationId}
           sessionId={this.sessionId}
           token={this.token}
           signal={this.state.signal}

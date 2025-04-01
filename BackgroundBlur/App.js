@@ -1,12 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component, createRef} from 'react';
 import {View, Button} from 'react-native';
-import {OTSession, OTPublisher, OTSubscriber} from 'opentok-react-native';
+import {OTSession, OTPublisher, OTSubscriber} from '@vonage/client-sdk-video-react-native';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.apiKey = '';
+    this.applicationId = '';
     this.sessionId = '';
     this.token = '';
     this.useBackgroundBlur = false;
@@ -44,7 +44,7 @@ class App extends Component {
           paddingVertical: 50,
         }}>
         <OTSession
-          apiKey={this.apiKey}
+          applicationId={this.applicationId}
           sessionId={this.sessionId}
           token={this.token}>
           <OTPublisher

@@ -1,13 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component, useState} from 'react';
 import {View, Text, Button} from 'react-native';
-import {OTSession, OTPublisher, OTSubscriber} from 'opentok-react-native';
+import {OTSession, OTPublisher, OTSubscriber} from '@vonage/client-sdk-video-react-native';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {shareScreen: false};
-    this.apiKey = '';
+    this.applicationId = '';
     this.sessionId = '';
     this.token = '';
 
@@ -27,7 +27,7 @@ class App extends Component {
         }}>
         <Text>Screen-sharing sample</Text>
         <OTSession
-          apiKey={this.apiKey}
+          applicationId={this.applicationId}
           sessionId={this.sessionId}
           token={this.token}
           eventHandlers={this.sessionEventHandlers}>
