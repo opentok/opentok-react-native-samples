@@ -11,6 +11,9 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 import com.facebook.soloader.SoLoader
+import com.opentokreactnative.OTSubscriberViewNativePackage
+import com.opentokreactnative.OTPublisherViewNativePackage
+import com.opentokreactnative.OpentokReactNativePackage;
 
 class MainApplication : Application(), ReactApplication {
 
