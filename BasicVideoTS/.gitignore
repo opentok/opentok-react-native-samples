@@ -1,0 +1,4 @@
+android/app/.cxx
+ios/Pods
+ios/.xcode.env.local
+vendor
