@@ -44,7 +44,7 @@ function App(): React.JSX.Element {
         eventHandlers={{
           sessionConnected: (event: any) => {
             console.log('sessionConnected', event);
-            setTimeout(() => setPublishStream(false), 5000);
+            setTimeout(() => setPublishStream(true), 5000);
             sessionRef.current?.signal({
               type: 'greeting2',
               data: 'hello again from React Native',
@@ -64,8 +64,9 @@ function App(): React.JSX.Element {
           archiveStopped: (event: any) =>
             console.log('archiveStopped event', event),
           muteForced: (event: any) => console.log('muteForced event', event),
-          streamPropertyChanged: (event: any) =>
-            console.log('streamPropertyChanged event', event),
+          streamPropertyChanged: (event: any) => {
+            // console.log('streamPropertyChanged event', event),
+          }
         }}
         signal={{
           type: 'greeting2',
