@@ -1,6 +1,8 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import "OTPublisherViewNativeComponentView.h"
+#import "OTSubscriberViewNativeComponentView.h"
 
 @implementation AppDelegate
 
@@ -26,6 +28,14 @@
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
+}
+
+- (NSDictionary<NSString *,Class<RCTComponentViewProtocol>> *)thirdPartyFabricComponents
+{
+  NSMutableDictionary * dictionary = [super thirdPartyFabricComponents].mutableCopy;
+  dictionary[@"OTPublisherViewNative"] = [OTPublisherViewNativeComponentView class];
+  dictionary[@"OTSubscriberViewNative"] = [OTSubscriberViewNativeComponentView class];
+  return dictionary;
 }
 
 @end
