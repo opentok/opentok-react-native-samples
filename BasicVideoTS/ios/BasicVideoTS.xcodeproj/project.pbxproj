@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		1E9FA94D57351B0911F13613 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		1FD2B27E2DA4DD6A003165FD /* FabricComponentRegistrar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2B27D2DA4DD6A003165FD /* FabricComponentRegistrar.mm */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A2695671B03D4C5C91F15E6F /* libPods-BasicVideoTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C50CC8EB0B552CE2790A7 /* libPods-BasicVideoTS.a */; };
@@ -19,6 +20,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BasicVideoTS/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BasicVideoTS/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = BasicVideoTS/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1FD2B2782DA4DCAE003165FD /* BasicVideoTS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BasicVideoTS-Bridging-Header.h"; path = "BasicVideoTS/BasicVideoTS-Bridging-Header.h"; sourceTree = "<group>"; };
+		1FD2B27C2DA4DD6A003165FD /* FabricComponentRegistrar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FabricComponentRegistrar.h; path = BasicVideoTS/FabricComponentRegistrar.h; sourceTree = "<group>"; };
+		1FD2B27D2DA4DD6A003165FD /* FabricComponentRegistrar.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = FabricComponentRegistrar.mm; path = BasicVideoTS/FabricComponentRegistrar.mm; sourceTree = "<group>"; };
 		24B064F443FA97F047A46F4F /* Pods-BasicVideoTS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicVideoTS.debug.xcconfig"; path = "Target Support Files/Pods-BasicVideoTS/Pods-BasicVideoTS.debug.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BasicVideoTS/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BasicVideoTS/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				1FD2B27C2DA4DD6A003165FD /* FabricComponentRegistrar.h */,
+				1FD2B27D2DA4DD6A003165FD /* FabricComponentRegistrar.mm */,
+				1FD2B2782DA4DCAE003165FD /* BasicVideoTS-Bridging-Header.h */,
 			);
 			name = BasicVideoTS;
 			sourceTree = "<group>";
@@ -131,7 +138,7 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1610;
 					};
 				};
 			};
@@ -246,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD2B27E2DA4DD6A003165FD /* FabricComponentRegistrar.mm in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +283,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = BasicVideoTS;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicVideoTS/BasicVideoTS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -302,6 +311,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = BasicVideoTS;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicVideoTS/BasicVideoTS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -376,10 +386,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +455,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
