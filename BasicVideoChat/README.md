@@ -4,11 +4,19 @@ This sample application shows how to connect to an OpenTok session, publish a st
 
 ## Setup
 
-1. Install the required node modules: `npm install`
+1. Install the required node modules: `npm install`.
 
-2. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
+2. Install the required Gems: `bundle install`.
 
-3. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+3. For iOS, install the Podfile's dependencies: `cd ios/ && bundle exec pod install`.
+
+4. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+
+Run the app:
+
+* For Android: `npm run android`
+
+* For iOS: `npm run ios`
 
 For testing, you can use the [OpenTok playground](https://tokbox.com/developer/tools/playground/) to create sessions, publish streams from a web client, and subscribe to streams published from the client using the OpenTok React Native SDK.
 

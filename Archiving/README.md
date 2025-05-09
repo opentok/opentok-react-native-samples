@@ -6,11 +6,19 @@ The app builds upon the Basic Video Chat sample app.
 
 ## Setup
 
-1. Install the required node modules: `npm install`
+1. Install the required node modules: `npm install`.
 
-2. For iOS, install the Podfile's dependencies: `cd ios/ && pod install`
+2. Install the required Gems: `bundle install`.
 
-3. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+3. For iOS, install the Podfile's dependencies: `cd ios/ && bundle exec pod install`.
+
+4. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+
+Run the app:
+
+* For Android: `npm run android`
+
+* For iOS: `npm run ios`
 
 You will need to start and stop archiving using one of the OpenTok server SDKs or the OpenTok REST API. See the [OpenTok Archiving developer guide](https://tokbox.com/developer/guides/archiving).
 
