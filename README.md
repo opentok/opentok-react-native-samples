@@ -74,9 +74,9 @@ For details on each sample, see the README.md file in each sample directory.
 
 4. Install the required Gems: `bundle install`.
 
-4. For iOS, install the Podfile's dependencies: `cd ios/ && bundle exec pod install`.
+5. For iOS, install the Podfile's dependencies: `cd ios/ && bundle exec pod install`.
 
-5. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
+6. In the App.js file, set the `apiKey`, `sessionId`, and `token` properties to your Vonage Video API key (project ID), a Vonage Video session ID, and a token for that session.
 
 ## Development and Contributing
 
