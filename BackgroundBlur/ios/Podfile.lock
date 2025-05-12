@@ -8,10 +8,10 @@ PODS:
   - hermes-engine (0.79.2):
     - hermes-engine/Pre-built (= 0.79.2)
   - hermes-engine/Pre-built (0.79.2)
-  - opentok-react-native (2.29.1):
-    - OTXCFramework (= 2.29.1)
+  - opentok-react-native (2.30.0):
+    - OTXCFramework (= 2.30.0)
     - React
-  - OTXCFramework (2.29.1)
+  - OTXCFramework (2.30.0)
   - RCT-Folly (2024.11.18.00):
     - boost
     - DoubleConversion
@@ -1659,7 +1659,7 @@ PODS:
     - React-perflogger (= 0.79.2)
     - React-utils (= 0.79.2)
   - SocketRocket (0.7.1)
-  - VonageClientSDKVideoTransformers (2.29.1)
+  - VonageClientSDKVideoTransformers (2.30.0)
   - Yoga (0.0.0)
 
 DEPENDENCIES:
@@ -1897,8 +1897,8 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: 314be5250afa5692b57b4dd1705959e1973a8ebe
-  opentok-react-native: fd7f8e72ca52f7c1552c3a3ad52a7376ed53d756
-  OTXCFramework: 5cb2c2c34044288a89dc1890f16d8d27144e974b
+  opentok-react-native: b968e7155546458d8d8f84833c11f12fead34b46
+  OTXCFramework: 393e98b2e078daf1888f99cdd1c9bb587684fc06
   RCT-Folly: e78785aa9ba2ed998ea4151e314036f6c49e6d82
   RCTDeprecation: 83ffb90c23ee5cea353bd32008a7bca100908f8c
   RCTRequired: eb7c0aba998009f47a540bec9e9d69a54f68136e
@@ -1962,7 +1962,7 @@ SPEC CHECKSUMS:
   ReactCodegen: c63eda03ba1d94353fb97b031fc84f75a0d125ba
   ReactCommon: 76d2dc87136d0a667678668b86f0fca0c16fdeb0
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  VonageClientSDKVideoTransformers: b2a6dda90ba9b100d528e9989728f18ddd26516b
+  VonageClientSDKVideoTransformers: 9af97a7b546ae01c7df5e2f21667ca299fcd0f2e
   Yoga: c758bfb934100bb4bf9cbaccb52557cee35e8bdf
 
 PODFILE CHECKSUM: 61263f24317c8696fc5833de28b3266d3a1723a0
