@@ -30,7 +30,7 @@ The background blur filter uses the Vonage Media Processor library. You need to 
 For Android, see the app's build.gradle file, which includes the following in the `dependencies` section:
 
 ```
-implementation 'com.vonage:client-sdk-video-transformers:2.28.0'
+implementation 'com.vonage:client-sdk-video-transformers:2.30.0'
 ```
 
 For iOS, the following is included in the Podfile:
