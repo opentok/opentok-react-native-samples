@@ -1,6 +1,8 @@
-# Basic Video Chat sample
+# Background Blur sample
 
-This sample application shows how to connect to an OpenTok session, publish a stream, and subscribe to multiple streams for both iOS and Android using the OpenTok React Native SDK.
+This sample application shows how to publish a stream that uses a background blur.
+
+The app builds upon the Basic Video Chat sample app.
 
 ## Setup
 
@@ -30,7 +32,7 @@ The background blur filter uses the Vonage Media Processor library. You need to 
 For Android, see the app's build.gradle file, which includes the following in the `dependencies` section:
 
 ```
-implementation 'com.vonage:client-sdk-video-transformers:2.30.0'
+implementation 'com.vonage:client-sdk-video-transformers:2.30.1'
 ```
 
 For iOS, the following is included in the Podfile:
