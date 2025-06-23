@@ -10,9 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "opentok-react-native": "opentok/opentok-react-native#fix-new-arch-build",
+    "opentok-react-native": "opentok/opentok-react-native#new-architecture",
     "react": "18.3.1",
-    "react-native": "0.76.5"
+    "react-native": "0.76.9"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
