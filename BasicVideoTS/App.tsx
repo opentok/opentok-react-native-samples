@@ -14,7 +14,7 @@ function App(): React.JSX.Element {
   const token = '';
 
   const [subscribeToVideo, setSubscribeToVideo] = React.useState<boolean>(true);
-  const [publishStream, setPublishStream] = React.useState<boolean>(false);
+  const [publishStream, setPublishStream] = React.useState<boolean>(true);
 
   const sessionRef = useRef<OTSession>(null);
   const subscriberRef = useRef<OTSubscriberViewNative>(null);
@@ -28,7 +28,7 @@ function App(): React.JSX.Element {
   React.useEffect(() => {
     setInterval(() => {
       toggleVideo();
-    }, 2000);
+    }, 12000);
   }, []);
 
   return (

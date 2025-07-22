@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setCount(count + 1);
-      setIsFabric(!!global?.nativeFabricUIManager);
+      // setIsFabric(!!global?.nativeFabricUIManager);
     }, 1000);
   });
 
