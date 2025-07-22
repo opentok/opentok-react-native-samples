@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "opentok-react-native": "opentok/opentok-react-native#new-architecture",
+    "opentok-react-native": "2.31.0-beta.0",
     "react": "19.0.0",
     "react-native": "0.78.2"
   },
