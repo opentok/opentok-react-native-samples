@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
-import {OTSession, OTPublisher, OTSubscriber} from 'opentok-react-native';
+import {OTSession, OTPublisher, OTSubscriber} from '@vonage/client-sdk-video-react-native';
 
 function App() {
   const apiKey = '';

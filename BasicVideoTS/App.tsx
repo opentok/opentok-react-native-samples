@@ -6,7 +6,7 @@ import {
   OTSubscriber,
   OTSubscriberView,
   OTPublisher,
-} from 'opentok-react-native';
+} from '@vonage/client-sdk-video-react-native';
 
 function App(): React.JSX.Element {
   const apiKey = '';
