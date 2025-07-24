@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "opentok-react-native": "2.31.0-beta.0",
+    "@vonage/client-sdk-video-react-native": "Vonage/vonage-video-react-native-sdk#vonage-new-architecture",
     "react": "19.0.0",
     "react-native": "0.78.2"
   },
