@@ -4,7 +4,7 @@ import {StyleSheet, View, Text} from 'react-native';
 import {OTSession, OTPublisher, OTSubscriber} from '@vonage/client-sdk-video-react-native';
 
 function App() {
-  const apiKey = '';
+  const applicationId = '';
   const sessionId = '';
   const token = '';
   const [isFabric, setIsFabric] = useState(!!global?.nativeFabricUIManager);
@@ -22,7 +22,7 @@ function App() {
     style={styles.view}>
     <Text>New architecture: {isFabric.toString()} {count.toString()}</Text>
     <OTSession
-      apiKey={apiKey}
+      applicationId={applicationId}
       sessionId={sessionId}
       token={token}>
       <OTPublisher style={styles.pubSub}/>

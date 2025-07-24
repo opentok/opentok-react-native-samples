@@ -9,7 +9,7 @@ import {
 } from '@vonage/client-sdk-video-react-native';
 
 function App(): React.JSX.Element {
-  const apiKey = '';
+  const applicationId = '';
   const sessionId = '';
   const token = '';
 
@@ -37,7 +37,7 @@ function App(): React.JSX.Element {
         Show videos: {subscribeToVideo.toString()}
       </Text>
       <OTSession
-        apiKey={apiKey}
+        applicationId={applicationId}
         token={token}
         sessionId={sessionId}
         ref={sessionRef}
