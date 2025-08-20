@@ -14,9 +14,9 @@ This sample application shows how to connect to an OpenTok session, publish a st
 
 Run the app:
 
-* For Android: `npm run android`
+- For Android: `npm run android`
 
-* For iOS: `npm run ios`
+- For iOS: `npm run ios`
 
 For testing, you can use the [OpenTok playground](https://tokbox.com/developer/tools/playground/) to create sessions, publish streams from a web client, and subscribe to streams published from the client using the OpenTok React Native SDK.
 
@@ -32,13 +32,10 @@ import {OTSession, OTPublisher, OTSubscriber} from 'opentok-react-native';
 
 Documentation for these components are at <https://github.com/opentok/opentok-react-native/blob/develop/docs/index.md>.
 
-This application shows the simplest way to publish and subscribe to audio-video streams in an OpenTok session. Simply add the  `apiKey`, `sessionId`, and `token` attributes to an `OTSession` component and add `OTPublisher` and `OTSubscriber` components as children of the  `OTSession` component:
+This application shows the simplest way to publish and subscribe to audio-video streams in an OpenTok session. Simply add the `apiKey`, `sessionId`, and `token` attributes to an `OTSession` component. You can obtain these values from a new session in the Vonage Playground. Then add `OTPublisher` and `OTSubscriber` components as children of the `OTSession` component:
 
 ```jsx
-<OTSession
-  apiKey={this.apiKey}
-  sessionId={this.sessionId}
-  token={this.token}>
+<OTSession apiKey={this.apiKey} sessionId={this.sessionId} token={this.token}>
   <OTPublisher style={{width: 200, height: 200}} />
   <OTSubscriber style={{width: 200, height: 200}} />
 </OTSession>

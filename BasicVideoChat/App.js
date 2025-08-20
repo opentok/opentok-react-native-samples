@@ -6,6 +6,10 @@ import {OTSession, OTPublisher, OTSubscriber} from 'opentok-react-native';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    /**
+     * apiKey => applicationId on the playground
+     */
     this.apiKey = '';
     this.sessionId = '';
     this.token = '';
