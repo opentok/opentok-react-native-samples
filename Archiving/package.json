@@ -12,7 +12,7 @@
   "dependencies": {
     "opentok-react-native": "^2.30.2",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.3"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
