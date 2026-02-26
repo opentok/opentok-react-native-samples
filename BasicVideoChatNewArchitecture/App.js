@@ -6,9 +6,9 @@ import {OTSession, OTPublisher, OTSubscriber} from 'opentok-react-native';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.apiKey = '';
-    this.sessionId = '';
-    this.token = '';
+    this.apiKey = '45328772';
+    this.sessionId = '2_MX40NTMyODc3Mn5-MTc3MDk5MTA4ODc2OX5mYlIwTmpicU5leS96OXFpM29pYlhvMDd-fn4';
+    this.token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI0NTMyODc3MiIsImlzdCI6InByb2plY3QiLCJpYXQiOjE3NzA5OTExMTcsImV4cCI6MTc3MDk5MjkxNjc0NSwic2Vzc2lvbl9pZCI6IjJfTVg0ME5UTXlPRGMzTW41LU1UYzNNRGs1TVRBNE9EYzJPWDVtWWxJd1RtcGljVTVsZVM5Nk9YRnBNMjlwWWxodk1EZC1mbjQiLCJjcmVhdGVfdGltZSI6MTc3MDk5MTExNywibm9uY2UiOjAuMjg2ODA4NDAyMzgzOTMyOCwicm9sZSI6Im1vZGVyYXRvciIsImV4cGlyZV90aW1lIjoxNzcwOTkyOTE2NzQ1LCJpbml0aWFsX2xheW91dF9jbGFzc19saXN0IjoiIiwic2NvcGUiOiJzZXNzaW9uLmNvbm5lY3QifQ.5dli63uYelgVJ-NxKE7uDBh4WYJBB25Lb0UOkDVWPc8';
   }
 
   render() {

@@ -1,4 +1,4 @@
-package com.basicvideochatnewarchitecture
+package com.archivingnewarchitecture
 
 import android.app.Application
 import com.facebook.react.PackageList
@@ -12,7 +12,7 @@ import com.facebook.react.defaults.DefaultReactNativeHost
 import com.opentokreactnative.OTRNPublisherPackage
 import com.opentokreactnative.OTRNSubscriberPackage
 import com.opentokreactnative.OpentokReactNativePackage;
-
+import com.archivingnewarchitecture.BuildConfig
 
 class MainApplication : Application(), ReactApplication {
 
@@ -20,13 +20,13 @@ class MainApplication : Application(), ReactApplication {
       object : DefaultReactNativeHost(this) {
         override fun getPackages(): List<ReactPackage> =
             PackageList(this).packages.apply {
-              add(OTRNPublisherPackage())
-              add(OTRNSubscriberPackage())
-              add(OpentokReactNativePackage())
-              // Packages that cannot be autolinked yet can be added manually here, for example:
+            add(OTRNPublisherPackage())
+            add(OTRNSubscriberPackage())
+            add(OpentokReactNativePackage())
+                // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
             }
-            
+
         override fun getJSMainModuleName(): String = "index"
 
         override fun getUseDeveloperSupport(): Boolean = BuildConfig.DEBUG
