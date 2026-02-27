@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       launchOptions: launchOptions
     )
 
+
+    // Register Vonage Video Fabric components for New Architecture
+    FabricComponentRegistrar.registerCustomComponents()
     return true
   }
 }
