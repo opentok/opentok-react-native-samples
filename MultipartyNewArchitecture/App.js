@@ -8,6 +8,7 @@ import {
   Dimensions,
   Button,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 import {
   OTSession,
@@ -187,69 +188,49 @@ class App extends Component {
       );
       subscribers.unshift(this.state.mainSubscriberStreamId);
     }
-    return subscribers.length > 1 ? (
-      <>
-        <View style={styles.mainSubscriberStyle}>
+    
+    // For v2.31.1: return array of wrapper Views with streamId prop
+    // OTSubscriber will wrap each in Context.Provider
+    return subscribers.map((streamId, index) => {
+      const isMainSubscriber = subscribers.length > 1 && index === 0;
+      const isSecondarySubscriber = subscribers.length > 1 && index > 0;
+      
+      return (
+        <View
+          key={streamId}
+          streamId={streamId}
+          style={{
+            position: 'absolute',
+            ...(isMainSubscriber && {
+              top: 0,
+              left: 0,
+              width: dimensions.width,
+              height: (dimensions.height * 3) / 4 - 50,
+            }),
+            ...(isSecondarySubscriber && {
+              bottom: 50,
+              left: (index - 1) * (dimensions.width / 2),
+              width: dimensions.width / 2,
+              height: dimensions.height / 4,
+            }),
+            ...((subscribers.length === 1) && {
+              top: 0,
+              left: 0,
+              width: dimensions.width,
+              height: dimensions.height - 50,
+            }),
+          }}>
           <TouchableOpacity
-            onPress={() =>
-              this.handleSubscriberSelection(subscribers, subscribers[0])
-            }
-            key={subscribers[0]}>
-            {/* <OTSubscriberView
-              streamId={subscribers[0]}
-              style={{
-                width: '100%',
-                height: '100%',
-              }}
-            /> */}
+            style={{width: '100%', height: '100%'}}
+            onPress={() => this.handleSubscriberSelection(subscribers, streamId)}>
+            <OTSubscriberView
+              streamId={streamId}
+              style={{width: '100%', height: '100%'}}
+            />
           </TouchableOpacity>
         </View>
-
-        <View style={styles.secondarySubscribers}>
-          <ScrollView
-            horizontal={true}
-            decelerationRate={0}
-            snapToInterval={dimensions.width / 2}
-            snapToAlignment={'center'}
-            onScrollEndDrag={e => this.handleScrollEnd(e, subscribers.slice(1))}
-            style={{
-              width: dimensions.width,
-              height: dimensions.height / 4,
-            }}>
-            {subscribers.slice(1).map(streamId => (
-              <TouchableOpacity
-                onPress={() =>
-                  this.handleSubscriberSelection(subscribers, streamId)
-                }
-                style={{
-                  width: dimensions.width / 2,
-                  height: dimensions.height / 4,
-                }}
-                key={streamId}>
-                <OTSubscriberView
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  key={streamId}
-                  streamId={streamId}
-                />
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-        </View>
-      </>
-    ) : subscribers.length > 0 ? (
-      <TouchableOpacity style={styles.fullView}>
-        <OTSubscriberView
-          streamId={subscribers[0]}
-          key={subscribers[0]}
-          style={{width: '100%', height: '100%'}}
-        />
-      </TouchableOpacity>
-    ) : (
-      <Text>No one connected</Text>
-    );
+      );
+    });
   };
 
   videoView = () => {
@@ -261,18 +242,18 @@ class App extends Component {
             sessionId={this.sessionId}
             token={this.token}
             options={{
-              androidOnTop: 'publisher',
+              ...(Platform.OS === 'android' && {androidOnTop: 'publisher'}),
             }}
             eventHandlers={this.sessionEventHandlers}>
             <OTPublisher
               properties={this.publisherProperties}
               style={styles.publisherStyle}
             />
-            {/* <OTSubscriber
+            <OTSubscriber
               style={{height: dimensions.height, width: dimensions.width}}
               streamProperties={this.state.streamProperties}>
               {this.renderSubscribers}
-            </OTSubscriber> */}
+            </OTSubscriber>
           </OTSession>
         </View>
 
