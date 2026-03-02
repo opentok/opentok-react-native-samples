@@ -17,6 +17,9 @@ in a React Native application._
 
   This sample application shows how to display and hide an archiving indicator when archiving for the session starts and stops. Note that you start and stop archiving using the OpenTok REST API or the OpenTok server SDKs. See the OpenTok [Archiving](https://tokbox.com/developer/guides/archiving) developer guide.
 
+- [Archiving New Architecture](https://github.com/opentok/opentok-react-native-samples/tree/master/ArchivingNewArchitecture):
+  Same as Archiving, but done with new ReactNative architecture and the infrastructure needed for it.
+
 - [BackgroundBlur](https://github.com/opentok/opentok-react-native-samples/tree/master/BackgroundBlur):
 
   This sample application shows how to use the Vonage Media Library to apply a background blur to a published video stream.
@@ -27,9 +30,16 @@ in a React Native application._
   publish a stream, and subscribe to multiple streams for both iOS and
   Android using the OpenTok React Native API.
 
+- [Basic Video Chat New Architecture](https://github.com/opentok/opentok-react-native-samples/tree/master/BasicVideoChatNewArchitecture):
+  Same as Basic Video Chat, but done with new ReactNative architecture and the infrastructure needed for it. 
+
 - [Multiparty](https://github.com/opentok/opentok-react-native-samples/tree/master/Multiparty):
 
   This sample application shows how to arrange videos and to toggle the mic and camera in multiparty calls.
+
+- [Multiparty New Architecture](https://github.com/opentok/opentok-react-native-samples/tree/master/MultipartyNewArchitecture):
+
+  Same as Multiparty, but done with new ReactNative architecture and the infrastructure needed for it. 
 
 - [Signaling](https://github.com/opentok/opentok-react-native-samples/tree/master/Signaling):
 
@@ -64,9 +74,12 @@ For details on each sample, see the README.md file in each sample directory.
 2. In your terminal, change your directory to the sample project you want:
 
 - `cd Archiving/`
+- `cd ArchivingNewArchitecture/`
 - `cd BackgroundBlur/`
 - `cd BasicVideoChat/`
+- `cd BasicVideoChatNewArchitecture/`
 - `cd Multiparty/`
+- `cd MultipartyNewArchitecture/`
 - `cd Signaling/`
 - `cd ScreenSharing/`
 
