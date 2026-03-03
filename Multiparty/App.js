@@ -322,8 +322,8 @@ const styles = StyleSheet.create({
     alignContent: 'center',
   },
   fullView: {
-    padding: 25,
-    marginTop: 20,
+    padding: 15,
+     marginTop: 10,
     flex: 1,
   },
   publisherStyle: {
