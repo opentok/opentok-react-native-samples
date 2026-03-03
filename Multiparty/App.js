@@ -276,7 +276,7 @@ class App extends Component {
           </OTSession>
         </View>
 
-        <View style={styles.buttonView}>
+        <View style={styles.buttonWrapperView}>
           <Button
             title={
               this.state.localPublishAudio ? 'Turn mic off' : 'Turn mic on'
@@ -299,9 +299,9 @@ class App extends Component {
 
   joinVideoCall = () => {
     return (
-      <SafeAreaView style={styles.fullView}>
+      <View style={styles.fullView}>
         <Button onPress={this.joinCall} title="Join call" />
-      </SafeAreaView>
+      </View>
     );
   };
 
@@ -311,7 +311,7 @@ class App extends Component {
 }
 
 const styles = StyleSheet.create({
-  buttonView: {
+   buttonWrapperView: {
     height: 50,
     display: 'flex',
     width: '100%',
@@ -322,6 +322,8 @@ const styles = StyleSheet.create({
     alignContent: 'center',
   },
   fullView: {
+    padding: 15,
+     marginTop: 10,
     flex: 1,
   },
   publisherStyle: {
