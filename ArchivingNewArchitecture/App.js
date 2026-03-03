@@ -6,9 +6,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {showRecIndicator: false};
-     this.apiKey = '';
-    this.sessionId = '';
-    this.token = '';
+    this.apiKey = "1cc1c8de-7e50-497b-b0b1-7d8e1ae46d38";
+    this.sessionId = "1_MX4xY2MxYzhkZS03ZTUwLTQ5N2ItYjBiMS03ZDhlMWFlNDZkMzh-fjE3NzIxMTQ1OTM0MzN-TWgvYlpBQzJEUVNZdVJjdER1UUpYWHVNfn5-";
+    this.token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InNlc3Npb24uY29ubmVjdCIsInNlc3Npb25faWQiOiIxX01YNHhZMk14WXpoa1pTMDNaVFV3TFRRNU4ySXRZakJpTVMwM1pEaGxNV0ZsTkRaa016aC1makUzTnpJeE1UUTFPVE0wTXpOLVRXZ3ZZbHBCUXpKRVVWTlpkVkpqZEVSMVVVcFlXSFZOZm41LSIsInJvbGUiOiJtb2RlcmF0b3IiLCJpbml0aWFsX2xheW91dF9jbGFzc19saXN0IjoiIiwiZXhwIjoxNzcyMjAwOTkzLCJzdWIiOiJ2aWRlbyIsImFjbCI6eyJwYXRocyI6eyIvc2Vzc2lvbi8qKiI6e319fSwianRpIjoiMDI4N2FjZGItNzgxYi00N2NiLWE2ODQtODUzMTFhMjE0MTc3IiwiaWF0IjoxNzcyMTE0NTkzLCJhcHBsaWNhdGlvbl9pZCI6IjFjYzFjOGRlLTdlNTAtNDk3Yi1iMGIxLTdkOGUxYWU0NmQzOCJ9.aypLBCmL4KKsvsHzYxpwscWRtmnqL_kCZ0RljZ-Bpmj3t4h-9kRxeMnwvRYwWWWMX9XJvACZNUXcIRO0Y9f9zFy665V0oxORp9K4Cq4w0egyXUpKjz-r_B0vvbI6IM9bkuY0AgArWNKNsddyru5Qkkj4CgSbHWFMuQw6H0TZfMa0Zz7vmrrh1u-Mf1u-CkuB4CcJlqQfGbB7G-qYO5xkR8I87T1yAJM-A9KPcO-FO73W14d-o8AobCnCP_HBeHZP7MOsnRRiAlJj_xSoqQN05p5qxcpeVErJ_HwnVyPykPjf7AbPJxIrypaGM5OvTk6BpG__0sg9U1kJ9v87LxJ8zg";
  
     this.sessionEventHandlers = {
       archiveStarted: event => {
