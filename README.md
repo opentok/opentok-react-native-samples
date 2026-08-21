@@ -1,9 +1,13 @@
-# OpenTok React Native Samples
+⚠️ **This repository has been deprecated in favour of the [Vonage React Native samples](https://github.com/Vonage/vonage-video-react-native-sdk-samples)** ⚠️
 
-<img src="https://assets.tokbox.com/img/vonage/Vonage_VideoAPI_black.svg" height="48px" alt="Tokbox is now known as Vonage" />
+# OpenTok React Native Samples
 
 _These samples demonstrate how to use opentok-react-native to do video-calling
 in a React Native application._
+
+## OpenTok customers
+
+If you are an existing OpenTok customer, you can use the samples in the [Vonage React Native samples](https://github.com/Vonage/vonage-video-react-native-sdk-samples) repository with your existing credentials. The samples there use the Vonage-branded SDK (`@vonage/client-sdk-video-react-native`) and the `applicationId` session prop instead of `apiKey` — your OpenTok API key maps directly to the Vonage `applicationId`. All other credentials (session ID and token) remain the same.
 
 ## Contents
 
